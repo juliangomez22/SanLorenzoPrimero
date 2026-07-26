@@ -1,0 +1,791 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* IMAGENES */
+
+.card-img-top{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+
+/* BODY */
+
+body{
+
+    font-family: Arial, sans-serif;
+
+    font-weight: bold;
+
+    background:#01041fea;
+
+    color:rgb(255, 255, 255);
+
+}
+
+/* HEADER */
+
+.header{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:30px;
+
+    background:#01093d69;
+
+}
+
+/* ===========================
+   NAVBAR BOOTSTRAP
+=========================== */
+
+.navbar{
+    background:#4C0202 !important;
+}
+
+.navbar-brand{
+    color:#fff !important;
+    font-weight:bold;
+    font-size:1.2rem;
+}
+
+.navbar-brand:hover{
+    color:#ff4d4d !important;
+}
+
+.navbar .nav-link{
+    color:#fff !important;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.navbar .nav-link:hover{
+    color:#ff4d4d !important;
+}
+
+.navbar .nav-link.active{
+    color:#f3f0f0 !important;
+}
+
+
+
+.logo{
+
+    width:250px;
+
+    margin-bottom:15px;
+
+}
+
+.header h1{
+
+    color:#fd0505;
+
+    margin-bottom:15px;
+
+}
+
+.header p{
+
+    margin-bottom:25px;
+
+}
+
+
+/* TARJETAS */
+
+.card{
+    background:#ffffff;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0px 5px 15px rgba(0,0,0,.4);
+    transition:.3s;
+    height:100%;
+}
+
+.page-asociate .card,
+.contacto-card,
+.entradas-card,
+.fixture-card,
+.trabaja-card,
+.abonos-card{
+    text-align:center;
+}
+
+
+
+
+.card:hover{
+
+    transform:scale(1.03);
+
+}
+
+/* TITULOS */
+
+.card h2{
+
+    color:#4C0202;
+
+    margin-bottom:20px;
+
+}
+
+
+/* TEXTO */
+
+.card p{
+
+    line-height:1.6;
+
+}
+
+.card-text{
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+footer{
+
+    background:#001845;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:50px;
+
+}
+
+/* TABLET */
+
+@media(max-width:992px){
+
+    .card-img-top{
+        height:220px;
+    }
+
+}
+
+/* CELULAR */
+
+@media(max-width:768px){
+
+  
+    .card img{
+
+        height:auto;
+
+    }
+
+}
+
+/* CELULARES PEQUEÑOS */
+
+@media(max-width:480px){
+
+    .header h1{
+
+        font-size:28px;
+
+    }
+
+    .logo{
+
+        width:120px;
+
+    }
+
+}
+
+/* Página Asociate */
+
+.page-asociate .contenedor{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.page-asociate .card{
+    max-width:700px;
+}
+
+.page-asociate .card img{
+    width:100%;
+    max-width:400px; /* o el tamaño real de la imagen */
+    height:auto;
+    display:block;
+    margin:20px auto;
+    border-radius:10px;
+}
+
+
+
+/* ===========================
+   CONTACTO
+=========================== */
+
+.contacto-card{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+
+}
+
+.texto-contacto{
+
+    flex: 1;
+    text-align: left;
+
+}
+
+.texto-contacto h2,
+.texto-contacto h3{
+
+    color: #001845;
+    margin-bottom: 15px;
+
+}
+
+.texto-contacto p{
+
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color:#001845
+
+}
+
+.imagen-contacto{
+
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imagen-contacto img{
+
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+
+    display: block;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .4);
+
+}
+
+/* ===========================
+   CONTACTO - NO RECORTAR IMAGEN
+=========================== */
+
+.page-contacto .card img{
+
+    width:100%;
+    max-width:300px;
+    height:auto !important;
+
+    object-fit:contain !important;
+
+    margin:0 auto;
+    display:block;
+
+}
+
+
+
+
+/* ===========================
+   ENTRADAS
+=========================== */
+
+.entradas-card{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+
+    width:100%;
+    max-width:1100px;
+
+    margin:auto;
+
+}
+
+.texto-entradas{
+
+    flex:1;
+    text-align:left;
+
+}
+
+.texto-entradas h2,
+.texto-entradas h3{
+
+    color:#001845;
+    margin-bottom:15px;
+
+}
+
+.texto-entradas p{
+
+    margin-bottom:20px;
+    line-height:1.6;
+    color:#001845
+
+}
+
+.texto-entradas ul{
+
+    margin-left:20px;
+    margin-bottom:30px;
+
+}
+
+.texto-entradas li{
+
+    margin-bottom:10px;
+    color:#001845
+
+}
+
+.imagen-entradas{
+
+    flex:1;
+    display:flex;
+    justify-content:center;
+
+}
+
+.imagen-entradas img{
+
+    width:100%;
+    max-width:500px;
+
+    height:auto;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.4);
+
+}
+
+/* Responsive */
+
+@media (max-width:768px){
+
+    .entradas-card{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .texto-entradas{
+
+        text-align:center;
+
+    }
+
+    .texto-entradas ul{
+
+        list-style:none;
+        margin-left:0;
+
+    }
+
+    .imagen-entradas img{
+
+        max-width:100%;
+
+    }
+
+}
+
+/* ===========================
+   FIXTURE
+=========================== */
+
+.fixture-card{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+
+    width:100%;
+    max-width:1100px;
+
+    margin:auto;
+
+}
+
+.texto-fixture{
+
+    flex:1;
+    text-align:left;
+    color:#001845
+
+}
+
+.texto-fixture h2{
+
+    color:#001845;
+    margin-bottom:20px;
+
+}
+
+.texto-fixture p{
+
+    margin-bottom:20px;
+    line-height:1.6;
+    color:#001845
+
+}
+
+.texto-fixture ul{
+
+    margin-left:20px;
+    margin-bottom:30px;
+
+}
+
+.texto-fixture li{
+
+    margin-bottom:10px;
+
+}
+
+.imagen-fixture{
+
+    flex:1;
+    display:flex;
+    justify-content:center;
+
+}
+
+.imagen-fixture img{
+
+    width:100%;
+    max-width:500px;
+    height:auto;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.4);
+
+}
+
+/* RESPONSIVE */
+
+@media (max-width:768px){
+
+    .fixture-card{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .texto-fixture{
+
+        text-align:center;
+
+    }
+
+    .texto-fixture ul{
+
+        list-style:none;
+        margin-left:0;
+
+    }
+
+    .imagen-fixture img{
+
+        max-width:100%;
+
+    }
+
+}
+
+/* ===========================
+   TRABAJÁ CON NOSOTROS
+=========================== */
+
+.trabaja-card{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+
+    width:100%;
+    max-width:1100px;
+
+    margin:auto;
+
+}
+
+.texto-trabaja{
+
+    flex:1;
+    text-align:left;
+
+}
+
+.texto-trabaja h2{
+
+    color:#001845;
+    margin-bottom:20px;
+
+}
+
+.texto-trabaja p{
+
+    margin-bottom:18px;
+    line-height:1.7;
+    color:#001845
+
+}
+
+.imagen-trabaja{
+
+    flex:1;
+    display:flex;
+    justify-content:center;
+
+}
+
+.imagen-trabaja img{
+
+    width:100%;
+    max-width:500px;
+
+    height:auto;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(196, 180, 180, 0.4);
+
+}
+
+/* Responsive */
+
+@media (max-width:768px){
+
+    .trabaja-card{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .texto-trabaja{
+
+        text-align:center;
+
+    }
+
+    .imagen-trabaja img{
+
+        max-width:100%;
+
+    }
+
+}
+
+/* ===========================
+   ABONOS 2026
+=========================== */
+
+.abonos-card{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+
+    width:100%;
+    max-width:1100px;
+
+    margin:auto;
+
+}
+
+.texto-abonos{
+
+    flex:1;
+    text-align:left;
+
+}
+
+.texto-abonos h2,
+.texto-abonos h3{
+
+    color:#001845;
+    margin-bottom:15px;
+
+}
+
+.texto-abonos p{
+
+    margin-bottom:20px;
+    line-height:1.6;
+    color:#001845
+}
+
+.texto-abonos ul{
+
+    margin-left:20px;
+    margin-bottom:30px;
+
+}
+
+.texto-abonos li{
+
+    margin-bottom:10px;
+    color:#001845
+
+}
+
+.imagen-abonos{
+
+    flex:1;
+    display:flex;
+    justify-content:center;
+
+}
+
+.imagen-abonos img{
+
+    width:100%;
+    max-width:500px;
+
+    height:auto;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.4);
+
+}
+
+/* Responsive */
+
+@media (max-width:768px){
+
+    .abonos-card{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .texto-abonos{
+
+        text-align:center;
+
+    }
+
+    .texto-abonos ul{
+
+        list-style:none;
+        margin-left:0;
+
+    }
+
+    .imagen-abonos img{
+
+        max-width:100%;
+
+    }
+
+}
+
+/* Texto gris en todas las tarjetas */
+
+.card p{
+    color:#333;
+}
+
+
+/* Todas las tarjetas del index iguales */
+
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 180px;
+}
+
+.card-title {
+    min-height: 55px;
+}
+
+.card-text {
+    flex-grow: 1;
+}
+
+
+/* Todos los botones Bootstrap */
+
+.boton,
+.btn-primary{
+    background-color:#4C0202 !important;
+    border:2px solid #4C0202 !important;
+    color:#fff !important;
+
+    padding:12px 28px;
+    border-radius:10px;
+
+    font-weight:bold;
+    text-decoration:none;
+
+    transition:.3s;
+}
+
+.boton:hover,
+.btn-primary:hover{
+    background-color:#8B0000 !important;
+    border-color:#8B0000 !important;
+    color:#fff !important;
+
+    transform:scale(1.05);
+}
+
+.boton:focus,
+.btn-primary:focus,
+.boton:active,
+.btn-primary:active{
+    background-color:#8B0000 !important;
+    border-color:#8B0000 !important;
+    color:#fff !important;
+    box-shadow:none !important;
+}
