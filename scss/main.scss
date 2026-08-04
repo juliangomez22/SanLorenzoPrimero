@@ -5,12 +5,14 @@
 @use "utilities/variables";
 @use "utilities/mixins";
 
+
 // ==========================
 // Base
 // ==========================
 
 @use "base/base";
 @use "base/tipografia";
+
 
 // ==========================
 // Layout
@@ -20,12 +22,14 @@
 @use "layout/nav";
 @use "layout/footer";
 
+
 // ==========================
 // Components
 // ==========================
 
 @use "components/buttons";
 @use "components/cards";
+
 
 // ==========================
 // Pages

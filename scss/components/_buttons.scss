@@ -1,5 +1,6 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
+@use "sass:color";
 
 
 .btn {
@@ -12,9 +13,9 @@
 
     &:hover {
 
-        background-color: lighten(
+        background-color: color.adjust(
             $color-principal,
-            10%
+            $lightness: 10%
         );
 
         color: $color-blanco;
@@ -43,7 +44,10 @@
 
     &:hover {
 
-        background-color: $color-negro;
+        background-color: color.adjust(
+            $color-secundario,
+            $lightness: 10%
+        );
 
     }
 

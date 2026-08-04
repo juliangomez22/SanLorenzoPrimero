@@ -1,17 +1,350 @@
-/* Error: Can't find stylesheet to import.
- *    ,
- * 14 | @use "pages/home";
- *    | ^^^^^^^^^^^^^^^^^
- *    '
- *   scss\main.scss 14:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 14 \2502  @use \"pages/home\";\d\a    \2502  ^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\main.scss 14:1  root stylesheet";
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #01041F;
+  color: #FFFFFF;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.container {
+  width: min(90%, 1200px);
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  color: #ff0000;
+  font-size: 2.5rem;
+}
+
+h2 {
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+
+h3 {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: #FFFFFF;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+  text-align: center;
+  background: linear-gradient(rgba(1, 9, 61, 0.9), rgba(1, 9, 61, 0.75));
+}
+.header .logo {
+  width: 220px;
+  margin-bottom: 1.5rem;
+  transition: 0.3s ease;
+}
+.header .logo:hover {
+  transform: scale(1.05);
+}
+.header h1 {
+  color: #ff0000;
+  margin-bottom: 1rem;
+}
+.header p {
+  max-width: 700px;
+  margin-bottom: 2rem;
+}
+@media (max-width: 768px) {
+  .header .logo {
+    width: 180px;
+  }
+  .header h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .header {
+    padding: 2rem;
+  }
+  .header .logo {
+    width: 150px;
+  }
+  .header h1 {
+    font-size: 1.7rem;
+  }
+}
+
+.navbar {
+  background-color: #4C0202 !important;
+  border-radius: 15px;
+}
+.navbar .navbar-nav {
+  gap: 0.4rem;
+}
+.navbar .nav-link {
+  color: #FFFFFF !important;
+  padding: 0.8rem 1rem;
+  font-weight: 600;
+  transition: 0.3s ease;
+  border-radius: 8px;
+}
+.navbar .nav-link:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+.navbar .nav-link.active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+footer {
+  margin-top: 3rem;
+  background: #4C0202 !important;
+  padding: 1.5rem;
+  text-align: center;
+}
+footer p {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 0.95rem;
+}
+
+.btn {
+  background: #4C0202;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 15px;
+  padding: 0.8rem 1.4rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.btn:hover {
+  background-color: rgb(49.2911010558%, 1.2971342383%, 1.2971342383%);
+  color: #FFFFFF;
+}
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn-secondary-custom {
+  background: #01041F;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 15px;
+  padding: 0.8rem 1.4rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.btn-secondary-custom:hover {
+  background-color: rgb(1.0171568627%, 4.068627451%, 31.5318627451%);
+}
+
+.card {
+  background: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  height: 100%;
+  border: none;
+  transition: 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35);
+}
+.card .card-img-top {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+.card .card-img-top:hover {
+  transform: scale(1.05);
+}
+.card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding: 1.5rem;
+}
+.card .card-title {
+  color: #4C0202;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.card .card-text {
+  color: #333333;
+  flex-grow: 1;
+}
+@media (max-width: 768px) {
+  .card .card-img-top {
+    height: 220px;
+  }
+}
+@media (max-width: 576px) {
+  .card .card-img-top {
+    height: 180px;
+  }
+}
+
+main {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+main .row {
+  row-gap: 2rem;
+}
+
+.home-card {
+  height: 100%;
+}
+
+.page-asociate {
+  text-align: center;
+}
+.page-asociate h2 {
+  color: #FFFFFF;
+  margin-bottom: 2rem;
+}
+.page-asociate .card {
+  max-width: 900px;
+  margin: auto;
+}
+.page-asociate .card img {
+  height: 350px;
+  object-fit: cover;
+}
+.page-asociate .card p {
+  color: #333333;
+}
+
+.page-contacto {
+  text-align: center;
+}
+.page-contacto .contacto-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.page-contacto .contacto-card img {
+  width: 350px;
+  border-radius: 15px;
+}
+.page-contacto .contacto-card .texto-contacto {
+  max-width: 500px;
+}
+.page-contacto .contacto-card .texto-contacto p {
+  color: #FFFFFF;
+}
+@media (max-width: 768px) {
+  .page-contacto .contacto-card {
+    flex-direction: column;
+  }
+}
+
+.page-entradas {
+  text-align: center;
+}
+.page-entradas h2 {
+  margin-bottom: 2rem;
+}
+.page-entradas .entradas-card {
+  max-width: 900px;
+  margin: auto;
+}
+.page-entradas .entradas-card img {
+  height: 350px;
+  object-fit: cover;
+}
+.page-entradas .entradas-card p {
+  color: #333333;
+}
+
+.page-fixture {
+  text-align: center;
+}
+.page-fixture .fixture-card {
+  max-width: 900px;
+  margin: auto;
+}
+.page-fixture .fixture-card img {
+  height: 350px;
+  object-fit: cover;
+}
+.page-fixture .fixture-card p {
+  color: #333333;
+}
+
+.page-trabajaCN {
+  text-align: center;
+}
+.page-trabajaCN h1 {
+  color: red;
+}
+.page-trabajaCN h2 {
+  margin-bottom: 2rem;
+}
+.page-trabajaCN .trabaja-card {
+  max-width: 900px;
+  margin: auto;
+}
+.page-trabajaCN .trabaja-card p {
+  color: #333333;
+}
+
+.page-abonos {
+  text-align: center;
+}
+.page-abonos .abonos-card {
+  max-width: 900px;
+  margin: auto;
+}
+.page-abonos .abonos-card img {
+  height: 350px;
+  object-fit: cover;
+}
+.page-abonos .abonos-card p {
+  color: #333333;
+}
+
+/*# sourceMappingURL=styles.css.map */
