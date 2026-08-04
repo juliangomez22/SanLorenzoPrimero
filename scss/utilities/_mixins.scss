@@ -1,42 +1,66 @@
 @use "variables" as *;
 
-@mixin flex-center{
+// =====================================
+// FLEX
+// =====================================
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@mixin card{
-
-    background:$color-blanco;
-    border-radius:$radio;
-    box-shadow:$sombra;
-    padding:20px;
-
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-@mixin responsive($size){
+// =====================================
+// CARD
+// =====================================
 
-    @if $size == tablet{
+@mixin card {
+    background: $color-blanco;
+    border-radius: $radio;
+    box-shadow: $sombra;
+    overflow: hidden;
+}
 
-        @media(max-width:768px){
+// =====================================
+// BOTÓN
+// =====================================
 
-            @content;
+@mixin boton($fondo, $texto) {
+    background: $fondo;
+    color: $texto;
+    border: none;
+    border-radius: $radio;
+    padding: .8rem 1.4rem;
+    cursor: pointer;
+    transition: $transicion;
+}
 
-        }
+// =====================================
+// RESPONSIVE
+// =====================================
 
+@mixin tablet {
+
+    @media (max-width: $tablet) {
+        @content;
     }
 
-    @if $size == mobile{
+}
 
-        @media(max-width:576px){
+@mixin mobile {
 
-            @content;
-
-        }
-
+    @media (max-width: $mobile) {
+        @content;
     }
 
 }
+
+@include flex-center;
+
+@include card;
