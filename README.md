@@ -1,12 +1,18 @@
 # San Lorenzo Primero
 
-Proyecto desarrollado para la materia **Desarrollo Web**.
+Proyecto desarrollado para la materia de Desarrollo Web.
+
+## Sitio publicado
+
+🔗 https://juliangomez22.github.io/SanLorenzoPrimero/
 
 ## Tecnologías utilizadas
 
 - HTML5
-- CSS3
+- SCSS (Sass)
 - Bootstrap 5.3
+- Git
+- GitHub
 
 ## Funcionalidades
 
