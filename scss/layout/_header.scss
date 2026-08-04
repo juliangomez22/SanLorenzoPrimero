@@ -1,31 +1,67 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
-.header{
+.header {
 
     @include flex-center;
+    flex-direction: column;
 
-    flex-direction:column;
+    padding: $espaciado-xl;
+    text-align: center;
+    background: linear-gradient(
+        rgba(1, 9, 61, .90),
+        rgba(1, 9, 61, .75)
+    );
 
-    padding:30px;
+    .logo {
 
-    background:$color-header;
+        width: 220px;
+        margin-bottom: $espaciado-md;
+        transition: $transicion;
 
-    .logo{
-
-        width:230px;
+        &:hover {
+            transform: scale(1.05);
+        }
 
     }
 
-    h1{
+    h1 {
 
-        margin-top:20px;
+        color: #ff0000;
+        margin-bottom: $espaciado-sm;
 
     }
 
-    p{
+    p {
 
-        margin-top:10px;
+        max-width: 700px;
+        margin-bottom: $espaciado-lg;
+
+    }
+
+    @include tablet {
+
+        .logo {
+            width: 180px;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+    }
+
+    @include mobile {
+
+        padding: $espaciado-lg;
+
+        .logo {
+            width: 150px;
+        }
+
+        h1 {
+            font-size: 1.7rem;
+        }
 
     }
 
