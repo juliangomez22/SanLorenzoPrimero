@@ -1,0 +1,20 @@
+@use "utilities/variables";
+@use "utilities/mixins";
+
+@use "base/base";
+@use "base/tipografia";
+
+@use "layout/header";
+@use "layout/nav";
+@use "layout/footer";
+
+@use "components/buttons";
+@use "components/cards";
+
+@use "pages/home";
+@use "pages/asociate";
+@use "pages/contacto";
+@use "pages/entradas";
+@use "pages/fixture";
+@use "pages/trabaja";
+@use "pages/abonos";

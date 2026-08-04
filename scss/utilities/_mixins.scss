@@ -1,0 +1,42 @@
+@use "variables" as *;
+
+@mixin flex-center{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+@mixin card{
+
+    background:$color-blanco;
+    border-radius:$radio;
+    box-shadow:$sombra;
+    padding:20px;
+
+}
+
+@mixin responsive($size){
+
+    @if $size == tablet{
+
+        @media(max-width:768px){
+
+            @content;
+
+        }
+
+    }
+
+    @if $size == mobile{
+
+        @media(max-width:576px){
+
+            @content;
+
+        }
+
+    }
+
+}

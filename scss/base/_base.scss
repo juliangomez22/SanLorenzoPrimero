@@ -1,0 +1,30 @@
+@use "../utilities/variables" as *;
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+body{
+
+    font-family:$fuente-principal;
+    background:$color-secundario;
+    color:$color-blanco;
+
+}
+
+img{
+
+    max-width:100%;
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}

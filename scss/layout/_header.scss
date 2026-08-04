@@ -1,0 +1,32 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.header{
+
+    @include flex-center;
+
+    flex-direction:column;
+
+    padding:30px;
+
+    background:$color-header;
+
+    .logo{
+
+        width:230px;
+
+    }
+
+    h1{
+
+        margin-top:20px;
+
+    }
+
+    p{
+
+        margin-top:10px;
+
+    }
+
+}

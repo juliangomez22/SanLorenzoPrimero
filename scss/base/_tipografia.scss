@@ -1,0 +1,22 @@
+@use "../utilities/variables" as *;
+
+h1{
+
+    color:red;
+    text-align:center;
+
+}
+
+h2{
+
+    color:$color-blanco;
+    margin-bottom:20px;
+
+}
+
+p{
+
+    color:$color-blanco;
+    line-height:1.6;
+
+}

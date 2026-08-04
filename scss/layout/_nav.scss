@@ -1,0 +1,27 @@
+@use "../utilities/variables" as *;
+
+.navbar{
+
+    background:$color-principal !important;
+
+    .nav-link{
+
+        color:white;
+
+        transition:$transicion;
+
+        &:hover{
+
+            color:gold;
+
+        }
+
+        &.active{
+
+            color:#ffcc00;
+
+        }
+
+    }
+
+}
