@@ -1,0 +1,42 @@
+@use "../utilities/variables" as *;
+
+
+.page-trabajaCN {
+
+
+    text-align:center;
+
+
+    h1 {
+
+        color:red;
+
+    }
+
+
+    h2 {
+
+        margin-bottom:$espaciado-lg;
+
+    }
+
+
+    .trabaja-card {
+
+
+        max-width:900px;
+
+        margin:auto;
+
+
+        p {
+
+            color:$color-gris;
+
+        }
+
+
+    }
+
+
+}

@@ -1,0 +1,35 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+
+// ================================
+// HOME
+// ================================
+
+
+main {
+
+    padding-top: $espaciado-xl;
+    padding-bottom: $espaciado-xl;
+
+
+    .row {
+
+        row-gap: $espaciado-lg;
+
+    }
+
+
+}
+
+
+// ================================
+// TARJETAS HOME
+// ================================
+
+
+.home-card {
+
+    height: 100%;
+
+}

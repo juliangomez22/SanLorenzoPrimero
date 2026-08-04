@@ -1,0 +1,44 @@
+@use "../utilities/variables" as *;
+
+
+.page-entradas {
+
+
+    text-align:center;
+
+
+    h2 {
+
+        margin-bottom:$espaciado-lg;
+
+    }
+
+
+    .entradas-card {
+
+
+        max-width:900px;
+
+        margin:auto;
+
+
+        img {
+
+            height:350px;
+
+            object-fit:cover;
+
+        }
+
+
+        p {
+
+            color:$color-gris;
+
+        }
+
+
+    }
+
+
+}

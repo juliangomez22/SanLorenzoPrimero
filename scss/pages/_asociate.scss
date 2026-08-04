@@ -1,0 +1,47 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+
+.page-asociate {
+
+
+    text-align:center;
+
+
+    h2 {
+
+        color:$color-blanco;
+
+        margin-bottom:$espaciado-lg;
+
+    }
+
+
+    .card {
+
+
+        max-width:900px;
+
+        margin:auto;
+
+
+        img {
+
+            height:350px;
+
+            object-fit:cover;
+
+        }
+
+
+        p {
+
+            color:$color-gris;
+
+        }
+
+
+    }
+
+
+}

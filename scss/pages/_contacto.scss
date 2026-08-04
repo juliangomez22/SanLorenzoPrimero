@@ -1,0 +1,60 @@
+@use "../utilities/variables" as *;
+
+
+.page-contacto {
+
+
+    text-align:center;
+
+
+    .contacto-card {
+
+
+        display:flex;
+
+        justify-content:center;
+
+        align-items:center;
+
+        gap:$espaciado-lg;
+
+
+        img {
+
+            width:350px;
+
+            border-radius:$radio;
+
+        }
+
+
+        .texto-contacto {
+
+
+            max-width:500px;
+
+
+            p {
+
+                color:$color-blanco;
+
+            }
+
+
+        }
+
+
+
+        @media(max-width:768px){
+
+
+            flex-direction:column;
+
+
+        }
+
+
+    }
+
+
+}
