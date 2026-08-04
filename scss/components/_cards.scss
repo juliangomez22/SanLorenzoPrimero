@@ -1,0 +1,109 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+
+.card {
+
+    @include card;
+
+    height: 100%;
+    border: none;
+
+    transition: $transicion;
+
+
+    // Efecto al pasar el mouse
+    &:hover {
+
+        transform: translateY(-8px);
+
+        box-shadow: 
+        0 15px 30px rgba(0,0,0,.35);
+
+    }
+
+
+    // Imagen de la tarjeta
+
+    .card-img-top {
+
+        width: 100%;
+        height: 250px;
+
+        object-fit: cover;
+
+        transition: $transicion;
+
+
+        &:hover {
+
+            transform: scale(1.05);
+
+        }
+
+    }
+
+
+    // Contenido interno
+
+    .card-body {
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: space-between;
+
+        text-align: center;
+
+        padding: $espaciado-md;
+
+
+    }
+
+
+    .card-title {
+
+        color: $color-principal;
+
+        font-weight: bold;
+
+        margin-bottom: $espaciado-sm;
+
+
+    }
+
+
+    .card-text {
+
+        color: $color-gris;
+
+        flex-grow: 1;
+
+    }
+
+
+    // Responsive
+
+    @include tablet {
+
+        .card-img-top {
+
+            height: 220px;
+
+        }
+
+    }
+
+
+    @include mobile {
+
+        .card-img-top {
+
+            height: 180px;
+
+        }
+
+    }
+
+}

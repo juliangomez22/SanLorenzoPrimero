@@ -1,0 +1,50 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+
+.btn {
+
+    @include boton(
+        $color-principal,
+        $color-blanco
+    );
+
+
+    &:hover {
+
+        background-color: lighten(
+            $color-principal,
+            10%
+        );
+
+        color: $color-blanco;
+
+    }
+
+
+    &:active {
+
+        transform: scale(.95);
+
+    }
+
+}
+
+
+// Botón alternativo
+
+.btn-secondary-custom {
+
+    @include boton(
+        $color-secundario,
+        $color-blanco
+    );
+
+
+    &:hover {
+
+        background-color: $color-negro;
+
+    }
+
+}
