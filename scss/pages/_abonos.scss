@@ -3,35 +3,32 @@
 
 .page-abonos {
 
+    text-align: center;
 
-    text-align:center;
 
 
     .abonos-card {
 
+        max-width: 900px;
+        margin: 0 auto;
 
-        max-width:900px;
-
-        margin:auto;
 
 
         img {
 
-            height:350px;
-
-            object-fit:cover;
+            height: 350px;
+            object-fit: cover;
 
         }
+
 
 
         p {
 
-            color:$color-gris;
+            color: $color-gris;
 
         }
 
-
     }
-
 
 }

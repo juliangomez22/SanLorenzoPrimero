@@ -3,40 +3,39 @@
 
 .page-trabajaCN {
 
+    text-align: center;
 
-    text-align:center;
 
 
     h1 {
 
-        color:red;
+        color: red;
 
     }
+
 
 
     h2 {
 
-        margin-bottom:$espaciado-lg;
+        margin-bottom: $espaciado-lg;
 
     }
+
 
 
     .trabaja-card {
 
+        max-width: 900px;
+        margin: 0 auto;
 
-        max-width:900px;
-
-        margin:auto;
 
 
         p {
 
-            color:$color-gris;
+            color: $color-gris;
 
         }
 
-
     }
-
 
 }

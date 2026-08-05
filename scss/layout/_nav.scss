@@ -1,34 +1,34 @@
 @use "../utilities/variables" as *;
 
+
 .navbar {
 
     background-color: $color-principal !important;
-
     border-radius: $radio;
+
 
     .navbar-nav {
 
-        gap: .4rem;
+        gap: $espaciado-xs;
 
     }
+
 
     .nav-link {
 
         color: $color-blanco !important;
-
         padding: .8rem 1rem;
-
         font-weight: 600;
-
         transition: $transicion;
-
         border-radius: 8px;
+
 
         &:hover {
 
             background: rgba(255,255,255,.12);
 
         }
+
 
         &.active {
 

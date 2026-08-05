@@ -1,64 +1,56 @@
 @use "../utilities/variables" as *;
 
-// ==============================
-// RESET
-// ==============================
 
 *,
 *::before,
 *::after {
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
-// ==============================
-// BODY
-// ==============================
 
 body {
+
     font-family: $fuente-principal;
     background-color: $color-secundario;
     color: $color-blanco;
     line-height: 1.6;
+
 }
 
-// ==============================
-// IMÁGENES
-// ==============================
 
 img {
+
     display: block;
     max-width: 100%;
     height: auto;
+
 }
 
-// ==============================
-// ENLACES
-// ==============================
 
 a {
+
     color: inherit;
     text-decoration: none;
     transition: $transicion;
+
 }
 
-// ==============================
-// LISTAS
-// ==============================
 
 ul,
 ol {
+
     list-style: none;
+
 }
 
-// ==============================
-// CONTENEDOR GENERAL
-// ==============================
 
 .container {
-    width: min(90%, 1200px);
+
+    width: min(90%,1200px);
     margin: 0 auto;
+
 }
-
-

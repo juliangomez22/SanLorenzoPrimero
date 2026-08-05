@@ -1,37 +1,31 @@
 @use "../utilities/variables" as *;
-@use "../utilities/mixins" as *;
 
 
 .card {
 
-    @include card;
-
+    background: $color-blanco;
+    border-radius: $radio;
+    box-shadow: $sombra;
+    overflow: hidden;
     height: 100%;
     border: none;
-
     transition: $transicion;
 
 
-    // Efecto al pasar el mouse
     &:hover {
 
         transform: translateY(-8px);
-
-        box-shadow: 
-        0 15px 30px rgba(0,0,0,.35);
+        box-shadow: 0 15px 30px rgba(0,0,0,.35);
 
     }
 
 
-    // Imagen de la tarjeta
 
     .card-img-top {
 
         width: 100%;
         height: 250px;
-
         object-fit: cover;
-
         transition: $transicion;
 
 
@@ -44,48 +38,41 @@
     }
 
 
-    // Contenido interno
 
     .card-body {
 
         display: flex;
-
         flex-direction: column;
-
         justify-content: space-between;
-
         text-align: center;
-
         padding: $espaciado-md;
 
-
     }
+
 
 
     .card-title {
 
         color: $color-principal;
-
         font-weight: bold;
-
         margin-bottom: $espaciado-sm;
 
-
     }
+
 
 
     .card-text {
 
         color: $color-gris;
-
         flex-grow: 1;
 
     }
 
 
-    // Responsive
 
-    @include tablet {
+    // Tablet
+
+    @include responsive(tablet) {
 
         .card-img-top {
 
@@ -96,7 +83,10 @@
     }
 
 
-    @include mobile {
+
+    // Mobile
+
+    @include responsive(mobile) {
 
         .card-img-top {
 

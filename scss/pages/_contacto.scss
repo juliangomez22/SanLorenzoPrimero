@@ -1,60 +1,57 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
 
 
 .page-contacto {
 
+    text-align: center;
 
-    text-align:center;
 
 
     .contacto-card {
 
+        @include flex-center;
 
-        display:flex;
+        gap: $espaciado-lg;
 
-        justify-content:center;
-
-        align-items:center;
-
-        gap:$espaciado-lg;
 
 
         img {
 
-            width:350px;
-
-            border-radius:$radio;
+            width: 350px;
+            border-radius: $radio;
 
         }
+
 
 
         .texto-contacto {
 
+            max-width: 500px;
 
-            max-width:500px;
 
 
             p {
 
-                color:$color-blanco;
+                color: $color-blanco;
 
             }
 
-
         }
-
-
-
-        @media(max-width:768px){
-
-
-            flex-direction:column;
-
-
-        }
-
 
     }
 
+
+
+    @include responsive(tablet) {
+
+
+        .contacto-card {
+
+            flex-direction: column;
+
+        }
+
+    }
 
 }

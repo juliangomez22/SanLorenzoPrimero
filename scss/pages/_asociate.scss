@@ -1,47 +1,42 @@
 @use "../utilities/variables" as *;
-@use "../utilities/mixins" as *;
 
 
 .page-asociate {
 
-
-    text-align:center;
+    text-align: center;
 
 
     h2 {
 
-        color:$color-blanco;
-
-        margin-bottom:$espaciado-lg;
+        color: $color-blanco;
+        margin-bottom: $espaciado-lg;
 
     }
+
 
 
     .card {
 
+        max-width: 900px;
+        margin: 0 auto;
 
-        max-width:900px;
-
-        margin:auto;
 
 
         img {
 
-            height:350px;
-
-            object-fit:cover;
+            height: 350px;
+            object-fit: cover;
 
         }
+
 
 
         p {
 
-            color:$color-gris;
+            color: $color-gris;
 
         }
 
-
     }
-
 
 }

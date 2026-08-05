@@ -1,21 +1,18 @@
 @use "../utilities/variables" as *;
 
+
 footer {
 
     margin-top: $espaciado-xl;
-
     background: $color-principal !important;
-
     padding: $espaciado-md;
-
     text-align: center;
+
 
     p {
 
         margin: 0;
-
         color: $color-blanco;
-
         font-size: .95rem;
 
     }

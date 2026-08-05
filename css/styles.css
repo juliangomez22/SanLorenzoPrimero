@@ -8,8 +8,6 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #01041F;
-  color: #FFFFFF;
   line-height: 1.6;
 }
 
@@ -46,23 +44,23 @@ h6 {
 }
 
 h1 {
-  color: #ff0000;
+  color: #000000;
   font-size: 2.5rem;
 }
 
 h2 {
-  color: #FFFFFF;
+  color: #000000;
   font-size: 2rem;
 }
 
 h3 {
-  color: #FFFFFF;
+  color: #000000;
   font-size: 1.5rem;
 }
 
 p {
   margin-bottom: 1rem;
-  color: #FFFFFF;
+  color: #000000;
 }
 
 .text-center {
@@ -87,7 +85,7 @@ p {
   transform: scale(1.05);
 }
 .header h1 {
-  color: #ff0000;
+  color: #b18686;
   margin-bottom: 1rem;
 }
 .header p {
@@ -115,14 +113,14 @@ p {
 }
 
 .navbar {
-  background-color: #4C0202 !important;
+  background-color: #490202 !important;
   border-radius: 15px;
 }
 .navbar .navbar-nav {
   gap: 0.4rem;
 }
 .navbar .nav-link {
-  color: #FFFFFF !important;
+  color: #ffffff !important;
   padding: 0.8rem 1rem;
   font-weight: 600;
   transition: 0.3s ease;

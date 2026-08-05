@@ -1,62 +1,40 @@
-@use "variables" as *;
-
-// =====================================
-// FLEX
-// =====================================
-
+// Centrar elementos con Flexbox
 @mixin flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-@mixin flex-between {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-// =====================================
-// CARD
-// =====================================
-
+// Estilo general de tarjetas
 @mixin card {
     background: $color-blanco;
     border-radius: $radio;
     box-shadow: $sombra;
     overflow: hidden;
-}
-
-// =====================================
-// BOTÓN
-// =====================================
-
-@mixin boton($fondo, $texto) {
-    background: $fondo;
-    color: $texto;
-    border: none;
-    border-radius: $radio;
-    padding: .8rem 1.4rem;
-    cursor: pointer;
     transition: $transicion;
 }
 
-// =====================================
-// RESPONSIVE
-// =====================================
 
-@mixin tablet {
+// Responsive
+@mixin responsive($size) {
 
-    @media (max-width: $tablet) {
-        @content;
+    @if $size == tablet {
+
+        @media (max-width: $tablet) {
+            @content;
+        }
+
+    }
+
+
+    @if $size == mobile {
+
+        @media (max-width: $mobile) {
+            @content;
+        }
+
     }
 
 }
-
-@mixin mobile {
-
-    @media (max-width: $mobile) {
-        @content;
-    }
-
-}
+@use "mixins" as *;

@@ -1,21 +1,27 @@
-// =====================================
-// COLORES
-// =====================================
+ // =====================================
+ // COLORES
+ // =====================================
 
 $color-principal: #4C0202;
 $color-secundario: #01041F;
-$color-header: rgba(1, 9, 61, .45);
+
+$color-header-arriba: rgba(1, 9, 61, .9);
+$color-header-abajo: rgba(1, 9, 61, .75);
+
+$color-titulo-header: #b18686;
 
 $color-blanco: #FFFFFF;
 $color-negro: #000000;
 $color-gris: #333333;
-$color-gris-claro: #F5F5F5;
+$color-gris-claro: #3a3a3a;
+
 
 // =====================================
 // TIPOGRAFÍA
 // =====================================
 
 $fuente-principal: Arial, Helvetica, sans-serif;
+
 
 // =====================================
 // ESPACIADOS
@@ -27,23 +33,27 @@ $espaciado-md: 1.5rem;
 $espaciado-lg: 2rem;
 $espaciado-xl: 3rem;
 
+
 // =====================================
 // BORDES
 // =====================================
 
 $radio: 15px;
 
+
 // =====================================
 // SOMBRAS
 // =====================================
 
-$sombra: 0 5px 15px rgba(0, 0, 0, .20);
+$sombra: 0 5px 15px rgba(0,0,0,.20);
+
 
 // =====================================
 // TRANSICIONES
 // =====================================
 
 $transicion: .3s ease;
+
 
 // =====================================
 // BREAKPOINTS
