@@ -1,0 +1,55 @@
+// ==========================================
+// COLORES
+// ==========================================
+
+$color-principal: #4c0202;
+$color-secundario: #01041f;
+$color-header: #01093d69;
+
+$color-blanco: #ffffff;
+$color-negro: #000;
+$color-gris: #333;
+
+$color-rojo: #fd0505;
+
+
+// ==========================================
+// TIPOGRAFÍA
+// ==========================================
+
+$fuente-principal: Arial, sans-serif;
+
+
+// ==========================================
+// MEDIDAS
+// ==========================================
+
+$radio: 15px;
+$ancho-maximo: 1100px;
+$espaciado: 20px;
+
+
+// ==========================================
+// SOMBRAS
+// ==========================================
+
+$sombra: 0 5px 15px rgba(0, 0, 0, 0.2);
+$sombra-hover: 0 10px 25px rgba(0, 0, 0, 0.3);
+
+
+// ==========================================
+// TRANSICIONES
+// ==========================================
+
+$transicion: 0.3s ease;
+$transicion-larga: 0.5s ease;
+
+
+// ==========================================
+// OPERADORES SASS
+// ==========================================
+
+$ancho-base: 1200px;
+$margen-lateral: 20px;
+
+$ancho-contenedor: $ancho-base - ($margen-lateral * 2);

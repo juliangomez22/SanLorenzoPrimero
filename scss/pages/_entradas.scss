@@ -1,0 +1,281 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+@use "../base/base";
+
+// ==========================================
+// ENTRADAS
+// ==========================================
+
+.page-entradas {
+
+    @extend .seccion-base;
+
+    width: 100%;
+
+    text-align: center;
+
+
+    // ======================================
+    // TÍTULO
+    // ======================================
+
+    h1,
+    h2 {
+
+        margin-bottom: 25px;
+
+        transition:
+            transform $transicion,
+            color $transicion;
+
+        &:hover {
+
+            transform: translateY(-4px);
+
+            color: $color-rojo;
+
+        }
+
+    }
+
+
+    // ======================================
+    // CONTENEDOR
+    // ======================================
+
+    .container {
+
+        width: 100%;
+
+        max-width: $ancho-maximo;
+
+        margin: 0 auto;
+
+    }
+
+
+    // ======================================
+    // CARD
+    // ======================================
+
+    .entradas-card {
+
+        @include card;
+
+        display: flex;
+
+        align-items: center;
+
+        gap: 30px;
+
+        width: 100%;
+
+        text-align: left;
+
+        overflow: hidden;
+
+
+        // ==================================
+        // IMAGEN
+        // ==================================
+
+        img {
+
+            width: 40%;
+
+            min-width: 280px;
+
+            height: 250px;
+
+            object-fit: cover;
+
+            border-radius: $radio;
+
+            transition:
+                transform $transicion-larga,
+                filter $transicion-larga;
+
+        }
+
+
+        // ==================================
+        // TEXTO
+        // ==================================
+
+        .texto-entradas {
+
+            flex: 1;
+
+            transition:
+                transform $transicion;
+
+
+            h3 {
+
+                color: $color-principal;
+
+                margin-bottom: 15px;
+
+                transition:
+                    color $transicion;
+
+
+                &:hover {
+
+                    color: $color-rojo;
+
+                }
+
+            }
+
+
+            p {
+
+                color: $color-gris;
+
+                line-height: 1.6;
+
+            }
+
+        }
+
+
+        // ==================================
+        // HOVER
+        // ==================================
+
+        &:hover {
+
+            transform: translateY(-8px);
+
+            box-shadow: $sombra-hover;
+
+
+            img {
+
+                transform: scale(1.06);
+
+                filter: brightness(1.08);
+
+            }
+
+
+            .texto-entradas {
+
+                transform: translateX(5px);
+
+            }
+
+        }
+
+    }
+
+
+    // ======================================
+    // BOTÓN
+    // ======================================
+
+    .btn {
+
+        margin-top: 20px;
+
+        transition:
+            transform $transicion,
+            box-shadow $transicion;
+
+
+        &:hover {
+
+            transform: translateY(-4px);
+
+            box-shadow:
+                0 8px 15px rgba(0, 0, 0, 0.25);
+
+        }
+
+    }
+
+
+    // ======================================
+    // TABLET
+    // ======================================
+
+    @media (max-width: 768px) {
+
+        padding: 35px 20px;
+
+
+        .entradas-card {
+
+            gap: 20px;
+
+
+            img {
+
+                width: 35%;
+
+                min-width: 220px;
+
+                height: 220px;
+
+            }
+
+        }
+
+    }
+
+
+    // ======================================
+    // MOBILE
+    // ======================================
+
+    @media (max-width: 576px) {
+
+        padding: 25px 15px;
+
+
+        .entradas-card {
+
+            flex-direction: column;
+
+            gap: 20px;
+
+            text-align: center;
+
+
+            img {
+
+                width: 100%;
+
+                min-width: 0;
+
+                height: 220px;
+
+            }
+
+
+            .texto-entradas {
+
+                width: 100%;
+
+
+                h3 {
+
+                    font-size: 1.3rem;
+
+                }
+
+
+                p {
+
+                    font-size: 0.95rem;
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

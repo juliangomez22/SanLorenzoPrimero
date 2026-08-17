@@ -1,0 +1,255 @@
+@use "../utilities/variables" as *;
+
+/* ==============================
+ANIMACIONES GENERALES
+============================== */
+
+/* Aparición suave de elementos */
+@keyframes aparecer {
+from {
+opacity: 0;
+transform: translateY(20px);
+}
+
+
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+}
+
+/* Aparición del logo */
+@keyframes aparecer-logo {
+from {
+opacity: 0;
+transform: scale(0.8);
+}
+
+
+to {
+    opacity: 1;
+    transform: scale(1);
+}
+
+}
+
+/* Efecto suave de flotación */
+@keyframes flotar {
+0%,
+100% {
+transform: translateY(0);
+}
+
+
+50% {
+    transform: translateY(-6px);
+}
+
+}
+
+/* Brillo */
+@keyframes brillo {
+0% {
+box-shadow: 0 0 0 rgba(255, 0, 0, 0);
+}
+
+
+50% {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.35);
+}
+
+100% {
+    box-shadow: 0 0 0 rgba(255, 0, 0, 0);
+}
+
+
+}
+
+/* ==============================
+HEADER
+============================== */
+
+.header {
+animation: aparecer 0.8s ease-out;
+}
+
+/* Logo */
+.logo {
+animation: aparecer-logo 1s ease-out;
+transition: transform $transicion;
+
+
+&:hover {
+    transform: scale(1.05);
+}
+
+
+}
+
+/* Título principal */
+.header h1 {
+animation: aparecer 1s ease-out 0.2s both;
+}
+
+/* Subtítulo */
+.header p {
+animation: aparecer 1s ease-out 0.4s both;
+}
+
+/* ==============================
+NAVBAR
+============================== */
+
+.navbar {
+animation: aparecer 0.8s ease-out 0.3s both;
+}
+
+/* Links del menú */
+.navbar .nav-link {
+position: relative;
+transition:
+color $transicion,
+transform $transicion;
+
+
+&:hover {
+    color: $color-blanco;
+    transform: translateY(-2px);
+}
+
+
+}
+
+/* Línea animada debajo del menú */
+.navbar .nav-link::after {
+content: "";
+position: absolute;
+left: 50%;
+bottom: 2px;
+width: 0;
+height: 2px;
+background-color: $color-blanco;
+transform: translateX(-50%);
+transition: width $transicion ease;
+}
+
+.navbar .nav-link:hover::after {
+width: 70%;
+}
+
+/* ==============================
+TÍTULOS
+============================== */
+
+h1,
+h2,
+h3 {
+animation: aparecer 0.8s ease-out;
+}
+
+/* ==============================
+CARDS
+============================== */
+
+.card {
+animation: aparecer 0.8s ease-out;
+transition:
+transform $transicion ease,
+box-shadow $transicion ease;
+
+
+&:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+}
+
+/* Imagen de las cards */
+.card img {
+transition:
+transform 0.5s ease,
+filter 0.5s ease;
+}
+
+.card:hover img {
+transform: scale(1.04);
+}
+
+/* ==============================
+BOTONES
+============================== */
+
+.boton,
+.btn-primary {
+transition:
+transform $transicion ease,
+box-shadow $transicion ease,
+background-color $transicion ease;
+
+
+&:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+&:active {
+    transform: translateY(0);
+}
+
+
+}
+
+/* ==============================
+IMÁGENES
+============================== */
+
+.imagen-contacto,
+.page-asociate img,
+.page-entradas img,
+.page-fixture img,
+.page-trabajaCN img,
+.page-abonos img {
+transition:
+transform 0.5s ease,
+filter 0.5s ease;
+
+
+&:hover {
+    transform: scale(1.03);
+    filter: brightness(1.08);
+}
+
+
+}
+
+/* ==============================
+EFECTO FLOTACIÓN
+============================== */
+
+.logo:hover {
+animation: flotar 2s ease-in-out infinite;
+}
+
+/* ==============================
+ACCESIBILIDAD
+============================== */
+
+/* Si el usuario tiene configurado
+reducir movimiento, desactivamos
+las animaciones */
+@media (prefers-reduced-motion: reduce) {
+
+
+*,
+*::before,
+*::after {
+    animation-duration: 0.04ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.04ms !important;
+    scroll-behavior: auto !important;
+}
+}

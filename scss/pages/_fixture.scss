@@ -1,0 +1,332 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+@use "../base/base";
+
+// ==========================================
+// FIXTURE
+// ==========================================
+
+.page-fixture {
+
+    @extend .seccion-base;
+
+    width: 100%;
+
+    text-align: center;
+
+
+    // ======================================
+    // TÍTULOS
+    // ======================================
+
+    h1,
+    h2 {
+
+        margin-bottom: 25px;
+
+        transition:
+            transform $transicion,
+            color $transicion;
+
+        &:hover {
+
+            transform: translateY(-4px);
+
+            color: $color-rojo;
+
+        }
+
+    }
+
+
+    // ======================================
+    // CONTENEDOR
+    // ======================================
+
+    .container {
+
+        width: 100%;
+
+        max-width: $ancho-maximo;
+
+        margin: 0 auto;
+
+    }
+
+
+    // ======================================
+    // CARD FIXTURE
+    // ======================================
+
+    .fixture-card,
+    .card {
+
+        @include card;
+
+        width: 100%;
+
+        text-align: center;
+
+        overflow: hidden;
+
+
+        // ==================================
+        // IMAGEN
+        // ==================================
+
+        img,
+        .card-img-top {
+
+            display: block;
+
+            width: 100%;
+
+            height: 250px;
+
+            object-fit: cover;
+
+            object-position: center;
+
+            border-radius: $radio;
+
+            transition:
+                transform $transicion-larga,
+                filter $transicion-larga;
+
+        }
+
+
+        // ==================================
+        // CONTENIDO
+        // ==================================
+
+        .card-body {
+
+            padding: $espaciado;
+
+
+            h3 {
+
+                color: $color-principal;
+
+                margin-bottom: 15px;
+
+                transition:
+                    transform $transicion,
+                    color $transicion;
+
+
+                &:hover {
+
+                    transform: translateY(-3px);
+
+                    color: $color-rojo;
+
+                }
+
+            }
+
+
+            p {
+
+                color: $color-gris;
+
+                line-height: 1.6;
+
+            }
+
+        }
+
+
+        // ==================================
+        // HOVER
+        // ==================================
+
+        &:hover {
+
+            transform: translateY(-8px);
+
+            box-shadow: $sombra-hover;
+
+
+            img,
+            .card-img-top {
+
+                transform: scale(1.06);
+
+                filter: brightness(1.08);
+
+            }
+
+        }
+
+    }
+
+
+    // ======================================
+    // HINCHADA
+    // ======================================
+
+    .hinchada {
+
+        margin-top: 40px;
+
+        padding: 30px;
+
+        text-align: center;
+
+        border-radius: $radio;
+
+        transition:
+            transform $transicion,
+            box-shadow $transicion;
+
+
+        &:hover {
+
+            transform: translateY(-6px);
+
+            box-shadow: $sombra-hover;
+
+        }
+
+
+        img {
+
+            display: block;
+
+            width: 100%;
+
+            max-width: 900px;
+
+            height: auto;
+
+            margin: 0 auto;
+
+            border-radius: $radio;
+
+            transition:
+                transform $transicion-larga;
+
+
+            &:hover {
+
+                transform: scale(1.03);
+
+            }
+
+        }
+
+
+        h2 {
+
+            margin-top: 25px;
+
+        }
+
+
+        p {
+
+            color: $color-blanco;
+
+            line-height: 1.6;
+
+        }
+
+    }
+
+
+    // ======================================
+    // TABLET
+    // ======================================
+
+    @media (max-width: 768px) {
+
+        padding: 35px 20px;
+
+
+        .fixture-card,
+        .card {
+
+            img,
+            .card-img-top {
+
+                height: 220px;
+
+            }
+
+        }
+
+
+        .hinchada {
+
+            margin-top: 30px;
+
+            padding: 20px;
+
+        }
+
+    }
+
+
+    // ======================================
+    // MOBILE
+    // ======================================
+
+    @media (max-width: 576px) {
+
+        padding: 25px 15px;
+
+
+        h2 {
+
+            font-size: 1.5rem;
+
+        }
+
+
+        .fixture-card,
+        .card {
+
+            img,
+            .card-img-top {
+
+                height: 200px;
+
+            }
+
+
+            .card-body {
+
+                padding: 15px;
+
+
+                p {
+
+                    font-size: 0.95rem;
+
+                }
+
+            }
+
+        }
+
+
+        .hinchada {
+
+            margin-top: 25px;
+
+            padding: 15px;
+
+
+            p {
+
+                font-size: 0.95rem;
+
+            }
+
+        }
+
+    }
+
+}

@@ -1,0 +1,269 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+
+// ==========================================
+// CARDS GENERALES
+// ==========================================
+
+.card {
+
+    @include card;
+
+    width: 100%;
+
+    height: 100%;
+
+    overflow: hidden;
+
+    border: none;
+
+    background-color: $color-blanco;
+
+    color: $color-negro;
+
+
+    // ======================================
+    // TÍTULOS
+    // ======================================
+
+    .card-title {
+
+        color: $color-negro;
+
+        margin-bottom: 15px;
+
+    }
+
+
+    // ======================================
+    // TEXTO
+    // ======================================
+
+    .card-text {
+
+        color: $color-gris;
+
+        line-height: 1.6;
+
+    }
+
+
+    // ======================================
+    // LISTAS
+    // ======================================
+
+    ul,
+    ol {
+
+        color: $color-negro;
+
+    }
+
+
+    li {
+
+        color: $color-negro;
+
+        margin-bottom: 8px;
+
+    }
+
+
+    // ======================================
+    // IMAGENES DE LAS CARDS
+    // ======================================
+
+    img {
+
+        display: block;
+
+        width: 100%;
+
+        max-width: 100%;
+
+        object-fit: cover;
+
+        object-position: center;
+
+    }
+
+
+    // ======================================
+    // IMAGEN CARD BOOTSTRAP
+    // ======================================
+
+    .card-img-top {
+
+        width: 100%;
+
+        height: 250px;
+
+        object-fit: cover;
+
+        object-position: center;
+
+        border-radius: 0;
+
+        transition:
+            transform $transicion-larga,
+            filter $transicion-larga;
+
+    }
+
+
+    // ======================================
+    // IMAGENES CON IMG-FLUID
+    // ======================================
+
+    .img-fluid {
+
+        display: block;
+
+        width: 100%;
+
+        max-width: 100%;
+
+    }
+
+
+    // ======================================
+    // HOVER DE IMAGEN
+    // ======================================
+
+    &:hover {
+
+        .card-img-top,
+        img {
+
+            filter: brightness(1.05);
+
+        }
+
+    }
+
+
+    // ======================================
+    // CARD BODY
+    // ======================================
+
+    .card-body {
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: space-between;
+
+        min-height: 180px;
+
+        color: $color-negro;
+
+    }
+
+}
+
+
+// ==========================================
+// FIXTURE
+// ==========================================
+
+.page-fixture {
+
+    .card {
+
+        width: 100%;
+
+        overflow: hidden;
+
+    }
+
+
+    .card img {
+
+        display: block;
+
+        width: 100%;
+
+        height: 350px;
+
+        object-fit: cover;
+
+        object-position: center;
+
+    }
+
+
+    .card-body {
+
+        min-height: 350px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        padding: 30px;
+
+    }
+
+}
+
+
+// ==========================================
+// RESPONSIVE FIXTURE
+// ==========================================
+
+@media (max-width: 768px) {
+
+    .page-fixture {
+
+        .card img {
+
+            height: 280px;
+
+        }
+
+
+        .card-body {
+
+            min-height: auto;
+
+            padding: 25px;
+
+        }
+
+    }
+
+}
+
+
+// ==========================================
+// MOBILE
+// ==========================================
+
+@media (max-width: 576px) {
+
+    .card {
+
+        .card-img-top {
+
+            height: 220px;
+
+        }
+
+    }
+
+
+    .page-fixture {
+
+        .card img {
+
+            height: 240px;
+
+        }
+
+    }
+
+}

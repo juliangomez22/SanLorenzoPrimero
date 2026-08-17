@@ -1,0 +1,157 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+
+// ==========================================
+// HEADER
+// ==========================================
+
+.header {
+
+    @include flex-center;
+
+    flex-direction: column;
+
+    width: 100%;
+
+    padding: 30px 20px;
+
+    background: $color-header;
+
+    text-align: center;
+
+    overflow: hidden;
+
+
+    // ======================================
+    // LOGO
+    // ======================================
+
+    .logo {
+
+        width: 250px;
+
+        margin-bottom: 20px;
+
+        transition:
+            transform $transicion-larga,
+            filter $transicion-larga;
+
+
+        &:hover {
+
+            transform:
+                scale(1.08)
+                rotate(2deg);
+
+            filter:
+                drop-shadow(
+                    0 0 10px rgba(255, 255, 255, 0.4)
+                );
+
+        }
+
+    }
+
+
+    // ======================================
+    // TÍTULO
+    // ======================================
+
+    h1 {
+
+        margin-bottom: 10px;
+
+        color: $color-rojo;
+
+        transition:
+            transform $transicion,
+            text-shadow $transicion;
+
+
+        &:hover {
+
+            transform: scale(1.02);
+
+            text-shadow:
+                0 0 10px rgba(253, 5, 5, 0.6);
+
+        }
+
+    }
+
+
+    // ======================================
+    // PÁRRAFO
+    // ======================================
+
+    p {
+
+        color: $color-blanco;
+
+        margin-bottom: 0;
+
+        line-height: 1.6;
+
+    }
+
+
+    // ======================================
+    // TABLET
+    // ======================================
+
+    @media (max-width: 768px) {
+
+        padding: 25px 20px;
+
+
+        .logo {
+
+            width: 210px;
+
+        }
+
+
+        h1 {
+
+            font-size: 2rem;
+
+        }
+
+    }
+
+
+    // ======================================
+    // MOBILE
+    // ======================================
+
+    @media (max-width: 576px) {
+
+        padding: 20px 15px;
+
+
+        .logo {
+
+            width: 180px;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        h1 {
+
+            font-size: 1.7rem;
+
+        }
+
+
+        p {
+
+            font-size: 0.95rem;
+
+        }
+
+    }
+
+}

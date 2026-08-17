@@ -1,0 +1,149 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+
+// ==========================================
+// HOME
+// ==========================================
+
+main {
+
+    width: 100%;
+
+    overflow: hidden;
+
+
+    // ======================================
+    // SECCIONES
+    // ======================================
+
+    section {
+
+        width: 100%;
+
+        max-width: $ancho-maximo;
+
+        margin: 0 auto;
+
+        padding: 40px $espaciado;
+
+    }
+
+
+    // ======================================
+    // TÍTULOS
+    // ======================================
+
+    h1,
+    h2 {
+
+        color: $color-blanco;
+
+        margin-bottom: 20px;
+
+        transition:
+            transform $transicion,
+            color $transicion;
+
+
+        &:hover {
+
+            transform: translateY(-4px);
+
+            color: $color-rojo;
+
+        }
+
+    }
+
+
+    // ======================================
+    // PÁRRAFOS
+    // ======================================
+
+    p {
+
+        color: $color-blanco;
+
+        line-height: 1.6;
+
+    }
+
+
+    // ======================================
+    // COLUMNAS DEL HOME
+    // ======================================
+
+    [data-aos] {
+
+        transition:
+            transform $transicion;
+
+    }
+
+
+    // ======================================
+    // TABLET
+    // ======================================
+
+    @include responsive(tablet) {
+
+        section {
+
+            padding: 35px 20px;
+
+        }
+
+
+        h1 {
+
+            font-size: 2.2rem;
+
+        }
+
+
+        h2 {
+
+            font-size: 1.8rem;
+
+        }
+
+    }
+
+
+    // ======================================
+    // MOBILE
+    // ======================================
+
+    @include responsive(mobile) {
+
+        section {
+
+            padding: 25px 15px;
+
+        }
+
+
+        h1 {
+
+            font-size: 1.8rem;
+
+        }
+
+
+        h2 {
+
+            font-size: 1.5rem;
+
+        }
+
+
+        p {
+
+            font-size: 0.95rem;
+
+        }
+
+    }
+
+}

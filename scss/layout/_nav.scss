@@ -1,0 +1,119 @@
+@use "../utilities/variables" as *;
+
+
+// ==========================================
+// NAVBAR
+// ==========================================
+
+.navbar {
+
+    background: $color-principal !important;
+
+    padding: 12px 0;
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.2);
+
+
+    // ======================================
+    // LOGO / BRAND
+    // ======================================
+
+    .navbar-brand {
+
+        color: $color-blanco !important;
+
+        font-weight: bold;
+
+        transition:
+            transform $transicion,
+            color $transicion;
+
+        &:hover {
+
+            transform: scale(1.05);
+
+            color: $color-rojo !important;
+
+        }
+
+    }
+
+
+    // ======================================
+    // LINKS
+    // ======================================
+
+    .nav-link {
+
+        color: $color-blanco !important;
+
+        margin: 0 5px;
+
+        position: relative;
+
+        transition:
+            color $transicion,
+            transform $transicion;
+
+
+        &:hover {
+
+            color: $color-rojo !important;
+
+            transform: translateY(-2px);
+
+        }
+
+
+        // Línea animada
+
+        &::after {
+
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+            bottom: 0;
+
+            width: 0;
+            height: 2px;
+
+            background: $color-rojo;
+
+            transition:
+                width $transicion;
+
+        }
+
+
+        &:hover::after {
+
+            width: 100%;
+
+        }
+
+    }
+
+
+    // ======================================
+    // BOTÓN MOBILE
+    // ======================================
+
+    .navbar-toggler {
+
+        border-color: $color-blanco;
+
+        transition:
+            transform $transicion;
+
+        &:hover {
+
+            transform: rotate(5deg);
+
+        }
+
+    }
+
+}

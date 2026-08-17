@@ -1,0 +1,139 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+
+// ==========================================
+// FOOTER
+// ==========================================
+
+.footer {
+
+    width: 100%;
+
+    background: $color-principal;
+
+    padding: 30px 20px;
+
+    margin-top: 40px;
+
+    text-align: center;
+
+    box-shadow:
+        0 -5px 15px rgba(0, 0, 0, 0.2);
+
+
+    // ======================================
+    // CONTENEDOR
+    // ======================================
+
+    .container {
+
+        width: 100%;
+
+        max-width: $ancho-maximo;
+
+        margin: 0 auto;
+
+    }
+
+
+    // ======================================
+    // PÁRRAFOS
+    // ======================================
+
+    p {
+
+        color: $color-blanco;
+
+        margin: 0;
+
+        line-height: 1.6;
+
+        transition:
+            transform $transicion,
+            color $transicion;
+
+
+        &:hover {
+
+            transform: translateY(-3px);
+
+            color: $color-rojo;
+
+        }
+
+    }
+
+
+    // ======================================
+    // LINKS
+    // ======================================
+
+    a {
+
+        color: $color-blanco;
+
+        transition:
+            color $transicion,
+            transform $transicion;
+
+
+        &:hover {
+
+            color: $color-rojo;
+
+            transform: translateY(-2px);
+
+        }
+
+    }
+
+
+    // ======================================
+    // TABLET
+    // ======================================
+
+    @media (max-width: 768px) {
+
+        padding: 25px 20px;
+
+        margin-top: 30px;
+
+
+        p {
+
+            font-size: 0.95rem;
+
+        }
+
+    }
+
+
+    // ======================================
+    // MOBILE
+    // ======================================
+
+    @media (max-width: 576px) {
+
+        padding: 25px 15px;
+
+        margin-top: 25px;
+
+
+        .container {
+
+            padding: 0;
+
+        }
+
+
+        p {
+
+            font-size: 0.9rem;
+
+        }
+
+    }
+
+}
+

@@ -1,0 +1,315 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+@use "../base/base";
+
+// ==========================================
+// TRABAJA CON NOSOTROS
+// ==========================================
+
+.page-trabajaCN {
+
+    @extend .seccion-base;
+
+    width: 100%;
+
+    text-align: center;
+
+
+    // ======================================
+    // TÍTULOS
+    // ======================================
+
+    h1,
+    h2 {
+
+        margin-bottom: 25px;
+
+        transition:
+            transform $transicion,
+            color $transicion;
+
+
+        &:hover {
+
+            transform: translateY(-4px);
+
+            color: $color-rojo;
+
+        }
+
+    }
+
+
+    // ======================================
+    // CONTENEDOR
+    // ======================================
+
+    .container {
+
+        width: 100%;
+
+        max-width: $ancho-maximo;
+
+        margin: 0 auto;
+
+    }
+
+
+    // ======================================
+    // CARD
+    // ======================================
+
+    .trabaja-card {
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 35px;
+
+        width: 100%;
+
+        padding: $espaciado;
+
+        text-align: left;
+
+        overflow: hidden;
+
+        background-color: $color-blanco;
+
+        color: $color-negro;
+
+        border-radius: $radio;
+
+        box-shadow: $sombra-hover;
+
+        transition:
+            transform $transicion,
+            box-shadow $transicion;
+
+
+        // ==================================
+        // IMAGEN
+        // ==================================
+
+        img {
+
+            display: block;
+
+            width: 40%;
+
+            min-width: 280px;
+
+            height: 280px;
+
+            object-fit: cover;
+
+            object-position: center;
+
+            border-radius: $radio;
+
+            transition:
+                transform $transicion-larga,
+                filter $transicion-larga;
+
+        }
+
+
+        // ==================================
+        // CONTENIDO
+        // ==================================
+
+        .card-body {
+
+            flex: 1;
+
+            padding: $espaciado;
+
+            color: $color-negro;
+
+            transition:
+                transform $transicion;
+
+
+            h3 {
+
+                color: $color-principal;
+
+                margin-bottom: 15px;
+
+                transition:
+                    color $transicion,
+                    transform $transicion;
+
+
+                &:hover {
+
+                    color: $color-rojo;
+
+                    transform: translateX(5px);
+
+                }
+
+            }
+
+
+            p {
+
+                color: $color-gris;
+
+                line-height: 1.6;
+
+                margin-bottom: 15px;
+
+            }
+
+        }
+
+
+        // ==================================
+        // HOVER
+        // ==================================
+
+        &:hover {
+
+            transform: translateY(-8px);
+
+            box-shadow: $sombra-hover;
+
+
+            img {
+
+                transform: scale(1.05);
+
+                filter: brightness(1.08);
+
+            }
+
+
+            .card-body {
+
+                transform: translateX(5px);
+
+            }
+
+        }
+
+    }
+
+
+    // ======================================
+    // BOTÓN
+    // ======================================
+
+    .btn {
+
+        margin-top: 20px;
+
+        transition:
+            transform $transicion,
+            box-shadow $transicion;
+
+
+        &:hover {
+
+            transform: translateY(-4px);
+
+            box-shadow:
+                0 8px 15px rgba(0, 0, 0, 0.25);
+
+        }
+
+    }
+
+
+    // ======================================
+    // TABLET
+    // ======================================
+
+    @media (max-width: 768px) {
+
+        padding: 35px 20px;
+
+
+        .trabaja-card {
+
+            gap: 25px;
+
+            padding: 20px;
+
+
+            img {
+
+                width: 35%;
+
+                min-width: 220px;
+
+                height: 240px;
+
+            }
+
+        }
+
+    }
+
+
+    // ======================================
+    // MOBILE
+    // ======================================
+
+    @media (max-width: 576px) {
+
+        padding: 25px 15px;
+
+
+        .trabaja-card {
+
+            flex-direction: column;
+
+            gap: 20px;
+
+            padding: 15px;
+
+            text-align: center;
+
+
+            img {
+
+                width: 100%;
+
+                min-width: 0;
+
+                height: 220px;
+
+            }
+
+
+            .card-body {
+
+                width: 100%;
+
+                padding: 15px;
+
+
+                h3 {
+
+                    font-size: 1.3rem;
+
+                }
+
+
+                p {
+
+                    font-size: 0.95rem;
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
