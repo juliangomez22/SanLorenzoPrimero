@@ -1,0 +1,103 @@
+// ==========================================
+// ANIMACIÓN APARECER
+// ==========================================
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.animacion-aparecer {
+    animation: aparecer 1s ease-in-out;
+}
+
+
+// ==========================================
+// ANIMACIÓN DESDE LA IZQUIERDA
+// ==========================================
+
+@keyframes aparecer-izquierda {
+
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+.animacion-izquierda {
+    animation: aparecer-izquierda 1s ease-in-out;
+}
+
+
+// ==========================================
+// ANIMACIÓN DESDE LA DERECHA
+// ==========================================
+
+@keyframes aparecer-derecha {
+
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+.animacion-derecha {
+    animation: aparecer-derecha 1s ease-in-out;
+}
+
+
+// ==========================================
+// ANIMACIÓN ZOOM
+// ==========================================
+
+@keyframes zoom {
+
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+.animacion-zoom {
+    animation: zoom 1s ease-in-out;
+}
+
+
+.animacion-delay-1 {
+    animation-delay: 0.2s;
+}
+
+.animacion-delay-2 {
+    animation-delay: 0.4s;
+}
+
+.animacion-delay-3 {
+    animation-delay: 0.6s;
+}

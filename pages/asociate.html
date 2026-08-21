@@ -2,75 +2,156 @@
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>San Lorenzo Primero | Asociate</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Asociate | San Lorenzo Primero</title>
 
-    <!-- Tu CSS -->
+    <!-- BOOTSTRAP -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- AOS -->
+
+    <link
+        href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+        rel="stylesheet"
+    >
+
+    <!-- CSS PROPIO -->
+
     <link rel="stylesheet" href="../css/styles.css">
+
 </head>
 
-<body class="page-asociate">
+
+<body>
+
+
+    <!-- ==========================================
+         HEADER
+    =========================================== -->
 
     <header class="header text-center py-4">
 
-        <h1>SAN LORENZO PRIMERO</h1>
+        <img
+            src="../assets/img/SLP.png"
+            alt="Logo San Lorenzo Primero"
+            class="logo mb-3 animacion-aparecer"
+        >
 
-        <p>Hacete socio del club más lindo del mundo.</p>
+        <h1
+            data-aos="fade-down"
+            data-aos-duration="1000"
+        >
+            San Lorenzo Primero
+        </h1>
 
-        <!-- Navbar Bootstrap -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-3">
+        <p
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+        >
+            Hacete socio del club más lindo del mundo.
+        </p>
+
+
+        <!-- NAVBAR -->
+
+        <nav
+            class="navbar navbar-expand-lg navbar-dark bg-dark mt-3"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+        >
+
             <div class="container">
 
-                <button class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav"
-                        aria-controls="navbarNav"
-                        aria-expanded="false"
-                        aria-label="Abrir menú">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Abrir menú"
+                >
 
                     <span class="navbar-toggler-icon"></span>
 
                 </button>
 
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+
+                <div
+                    class="collapse navbar-collapse justify-content-center"
+                    id="navbarNav"
+                >
 
                     <ul class="navbar-nav">
 
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Inicio</a>
+                            <a
+                                class="nav-link"
+                                href="../index.html"
+                            >
+                                Inicio
+                            </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="asociate.html">
+                            <a
+                                class="nav-link active"
+                                href="./asociate.html"
+                            >
                                 Asociate
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            <a
+                                class="nav-link"
+                                href="./contacto.html"
+                            >
+                                Contacto
+                            </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="entradas.html">Entradas</a>
+                            <a
+                                class="nav-link"
+                                href="./entradas.html"
+                            >
+                                Entradas
+                            </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="fixture.html">Fixture</a>
+                            <a
+                                class="nav-link"
+                                href="./fixture.html"
+                            >
+                                Fixture
+                            </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="trabajaCN.html">
+                            <a
+                                class="nav-link"
+                                href="./trabajaCN.html"
+                            >
                                 Trabajá con Nosotros
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="abonos.html">
+                            <a
+                                class="nav-link"
+                                href="./abonos.html"
+                            >
                                 Abonos 2026
                             </a>
                         </li>
@@ -80,40 +161,68 @@
                 </div>
 
             </div>
+
         </nav>
 
     </header>
 
-    <main class="container my-5">
 
-        <div class="row justify-content-center">
+    <!-- ==========================================
+         CONTENIDO
+    =========================================== -->
 
-            <div class="col-lg-8">
+    <main class="container my-5 page-asociate">
 
-                <div class="card shadow p-4 text-center">
+        <section
+            class="text-center animacion-aparecer"
+        >
 
-                    <h2>Asociate a San Lorenzo</h2>
+            <h2>
+                Hacete socio del club más lindo del mundo
+            </h2>
 
-                    <img src="../assets/img/asociate.jpg"
-                         alt="Asociate a San Lorenzo"
-                         class="img-fluid rounded my-4">
+            <p>
+                Ser parte de San Lorenzo es mucho más que ser hincha.
+                Asociate y disfrutá de todos los beneficios de formar
+                parte de la gran familia azulgrana.
+            </p>
 
-                    <p>
-                        Ser <strong>socio</strong> significa formar parte de la historia azulgrana
-                        y colaborar con el crecimiento del club.
-                        Además, podrás acceder a <strong>beneficios exclusivos</strong>,
-                        <strong>prioridad para comprar entradas</strong> y
-                        <strong>descuentos especiales</strong>.
-                    </p>
+        </section>
 
-                    <div class="mt-3">
 
-                        <a href="https://casla.com.ar"
-                           target="_blank"
-                           class="btn btn-primary">
+        <section
+            class="row justify-content-center mt-5"
+        >
 
-                            QUIERO ASOCIARME
+            <div
+                class="col-12 col-md-8 col-lg-6"
+            >
 
+                <div class="card shadow h-100 animacion-zoom">
+
+                    <img
+                        src="../assets/img/asociate.jpg"
+                        class="card-img-top"
+                        alt="Asociate a San Lorenzo"
+                    >
+
+                    <div class="card-body text-center">
+
+                        <h3 class="card-title">
+                            Sumate al Ciclón
+                        </h3>
+
+                        <p class="card-text">
+                            Convertite en socio y acompañá al club
+                            en cada momento. Accedé a beneficios,
+                            actividades y experiencias exclusivas.
+                        </p>
+
+                        <a
+                            href="./contacto.html"
+                            class="btn btn-primary"
+                        >
+                            Más información
                         </a>
 
                     </div>
@@ -122,25 +231,43 @@
 
             </div>
 
-        </div>
+        </section>
 
     </main>
 
- <!--FOOTER -->
 
-    <main class="container my-5"></main>
-    
+    <!-- FOOTER -->
+
     <footer class="footer">
 
-    <p>
-        &copy; 2026 San Lorenzo Primero | Todos los derechos reservados.
-    </p>
+        <p>
+            &copy; 2026 San Lorenzo Primero | Todos los derechos reservados.
+        </p>
 
     </footer>
 
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- BOOTSTRAP JS -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- AOS JS -->
+
+    <script
+        src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    </script>
+
+    <script>
+
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 120
+        });
+
+    </script>
 
 </body>
 

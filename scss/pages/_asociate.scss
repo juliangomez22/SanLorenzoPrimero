@@ -194,7 +194,7 @@
 
     .asociate-contenido {
 
-        @include aparecer(1s);
+        animation: aparecer 1s ease-in-out;
 
     }
 

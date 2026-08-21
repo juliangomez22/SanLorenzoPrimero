@@ -2,76 +2,154 @@
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>San Lorenzo Primero | Entradas</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Entradas | San Lorenzo Primero</title>
 
-    <!-- CSS -->
+    <!-- BOOTSTRAP -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- AOS -->
+
+    <link
+        href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+        rel="stylesheet"
+    >
+
+    <!-- CSS PROPIO -->
+
     <link rel="stylesheet" href="../css/styles.css">
+
 </head>
 
-<body class="page-entradas">
+
+<body>
+
+
+    <!-- HEADER -->
 
     <header class="header text-center py-4">
 
-        <h1>SAN LORENZO PRIMERO</h1>
+        <img
+            src="../assets/img/SLP.png"
+            alt="Logo San Lorenzo Primero"
+            class="logo mb-3 animacion-aparecer"
+        >
 
-        <p>Viví la pasión azulgrana desde la tribuna.</p>
+        <h1
+            data-aos="fade-down"
+            data-aos-duration="1000"
+        >
+            San Lorenzo Primero
+        </h1>
 
-        <!-- Navbar Bootstrap -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-3">
+        <p
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+        >
+            Vení a alentar al Ciclón todos los fines de semana.
+        </p>
+
+
+        <!-- NAVBAR -->
+
+        <nav
+            class="navbar navbar-expand-lg navbar-dark bg-dark mt-3"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+        >
+
             <div class="container">
 
-
-                <button class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav"
-                        aria-controls="navbarNav"
-                        aria-expanded="false"
-                        aria-label="Abrir menú">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Abrir menú"
+                >
 
                     <span class="navbar-toggler-icon"></span>
 
                 </button>
 
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+
+                <div
+                    class="collapse navbar-collapse justify-content-center"
+                    id="navbarNav"
+                >
 
                     <ul class="navbar-nav">
 
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Inicio</a>
+                            <a
+                                class="nav-link"
+                                href="../index.html"
+                            >
+                                Inicio
+                            </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="asociate.html">Asociate</a>
+                            <a
+                                class="nav-link"
+                                href="./asociate.html"
+                            >
+                                Asociate
+                            </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            <a
+                                class="nav-link"
+                                href="./contacto.html"
+                            >
+                                Contacto
+                            </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="entradas.html">
+                            <a
+                                class="nav-link active"
+                                href="./entradas.html"
+                            >
                                 Entradas
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="fixture.html">Fixture</a>
+                            <a
+                                class="nav-link"
+                                href="./fixture.html"
+                            >
+                                Fixture
+                            </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="trabajaCN.html">
+                            <a
+                                class="nav-link"
+                                href="./trabajaCN.html"
+                            >
                                 Trabajá con Nosotros
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="abonos.html">
+                            <a
+                                class="nav-link"
+                                href="./abonos.html"
+                            >
                                 Abonos 2026
                             </a>
                         </li>
@@ -81,44 +159,81 @@
                 </div>
 
             </div>
+
         </nav>
 
     </header>
 
-    <main class="contenedor">
 
-        <section class="card entradas-card">
+    <!-- CONTENIDO -->
 
-            <div class="texto-entradas">
+    <main class="container my-5 page-entradas">
 
-                <h2><strong>¡Vení a alentar al Matador!</strong></h2>
+        <section
+            class="text-center animacion-aparecer"
+        >
 
-                <p>
-                    Desde esta sección podrás comprar tus entradas para cada
-                    partido de local o visitante.
-                </p>
+            <h2>
+                Vení a alentar al Ciclón todos los fines de semana
+            </h2>
 
-                <h3><strong>Beneficios para todos los socios:</strong></h3>
+            <p>
+                Consultá la información sobre entradas y preparate
+                para acompañar a San Lorenzo en cada partido.
+            </p>
 
-                <ul>
-                    <li>✔ Prioridad en la compra.</li>
-                    <li>✔ Prioridad en la cola de espera.</li>
-                    <li>✔ Descuentos exclusivos.</li>
-                    <li>✔ Acceso a promociones.</li>
-                    <li>✔ Compra online rápida y segura.</li>
-                </ul>
+        </section>
 
-                <a href="#" class="btn btn-primary">
-                    COMPRAR ENTRADAS
-                </a>
+
+        <section
+            class="row align-items-center g-5 mt-4"
+        >
+
+            <div
+                class="col-12 col-lg-6 animacion-izquierda"
+            >
+
+                <img
+                    src="../assets/img/entradas.jpg"
+                    class="img-fluid rounded shadow"
+                    alt="Entradas de San Lorenzo"
+                >
 
             </div>
 
-            <div class="imagen-entradas">
 
-                <img src="../assets/img/entradas.jpg"
-                     alt="Entradas San Lorenzo"
-                     class="img-fluid rounded">
+            <div
+                class="col-12 col-lg-6 animacion-derecha"
+            >
+
+                <div class="card shadow">
+
+                    <div class="card-body">
+
+                        <h3 class="card-title">
+                            Entradas para los partidos
+                        </h3>
+
+                        <p class="card-text">
+                            Encontrá toda la información necesaria
+                            para acompañar al Ciclón en el Nuevo Gasómetro.
+                        </p>
+
+                        <p class="card-text">
+                            Consultá precios, sectores disponibles
+                            y modalidades de acceso para cada partido.
+                        </p>
+
+                        <a
+                            href="./contacto.html"
+                            class="btn btn-primary"
+                        >
+                            Consultar información
+                        </a>
+
+                    </div>
+
+                </div>
 
             </div>
 
@@ -126,20 +241,39 @@
 
     </main>
 
- <!--FOOTER -->
 
-    <main class="container my-5"></main>
-    
+    <!-- FOOTER -->
+
     <footer class="footer">
 
-    <p>
-        &copy; 2026 San Lorenzo Primero | Todos los derechos reservados.
-    </p>
+        <p>
+            &copy; 2026 San Lorenzo Primero | Todos los derechos reservados.
+        </p>
 
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- BOOTSTRAP JS -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- AOS JS -->
+
+    <script
+        src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    </script>
+
+    <script>
+
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 120
+        });
+
+    </script>
 
 </body>
 
