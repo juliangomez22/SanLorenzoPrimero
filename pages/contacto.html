@@ -3,28 +3,73 @@
 
 <head>
 
+    <!-- ==========================================
+         CONFIGURACIÓN BÁSICA
+    =========================================== -->
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Contactate con San Lorenzo Primero para realizar consultas, recibir información y conocer más sobre el Club Atlético San Lorenzo."
+    >
+
+    <meta
+        name="keywords"
+        content="contacto San Lorenzo Primero, contacto San Lorenzo, Club Atlético San Lorenzo, consultas San Lorenzo, Ciclón"
+    >
+
+    <meta
+        name="author"
+        content="San Lorenzo Primero"
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+
+    <!-- ==========================================
+         TÍTULO
+    =========================================== -->
 
     <title>Contacto | San Lorenzo Primero</title>
 
-    <!-- BOOTSTRAP -->
+
+    <!-- ==========================================
+         BOOTSTRAP
+    =========================================== -->
 
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet"
     >
 
-    <!-- AOS -->
+
+    <!-- ==========================================
+         AOS - ANIMACIONES
+    =========================================== -->
 
     <link
         href="https://unpkg.com/aos@2.3.1/dist/aos.css"
         rel="stylesheet"
     >
 
-    <!-- CSS PROPIO -->
 
-    <link rel="stylesheet" href="../css/styles.css">
+    <!-- ==========================================
+         CSS PRINCIPAL - SCSS COMPILADO
+    =========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="../css/styles.css"
+    >
 
 </head>
 
@@ -32,51 +77,90 @@
 <body>
 
 
-    <!-- HEADER -->
+    <!-- ==========================================
+         HEADER
+    =========================================== -->
 
-    <header class="header text-center py-4">
+    <header class="header">
 
-        <img
-            src="../assets/img/SLP.png"
-            alt="Logo San Lorenzo Primero"
-            class="logo mb-3 animacion-aparecer"
-        >
+        <div class="container">
 
-        <h1
-            data-aos="fade-down"
-            data-aos-duration="1000"
-        >
-            San Lorenzo Primero
-        </h1>
-
-        <p
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="200"
-        >
-            Estamos para ayudarte.
-        </p>
+            <div class="row align-items-center">
 
 
-        <!-- NAVBAR -->
+                <!-- LOGO -->
+
+                <div class="col-12 col-md-4 text-center">
+
+                    <a
+                        href="../index.html"
+                        aria-label="Ir al inicio de San Lorenzo Primero"
+                    >
+
+                        <img
+                            src="../assets/img/san-lorenzo-primero-logo.png"
+                            alt="Logo de San Lorenzo Primero"
+                            class="logo img-fluid"
+                        >
+
+                    </a>
+
+                </div>
+
+
+                <!-- TÍTULO -->
+
+                <div class="col-12 col-md-8 text-center">
+
+                    <h1
+                        data-aos="fade-down"
+                        data-aos-duration="1000"
+                    >
+
+                        San Lorenzo Primero
+
+                    </h1>
+
+
+                    <p
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="200"
+                    >
+
+                        Estamos para ayudarte.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==========================================
+             NAVEGACIÓN
+        =========================================== -->
 
         <nav
-            class="navbar navbar-expand-lg navbar-dark bg-dark mt-3"
+            class="navbar navbar-expand-lg"
+            aria-label="Navegación principal"
             data-aos="fade-down"
             data-aos-duration="1000"
             data-aos-delay="300"
         >
 
-            <div class="container">
+                <!-- BOTÓN MOBILE -->
 
                 <button
                     class="navbar-toggler"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    aria-controls="navbarNav"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
                     aria-expanded="false"
-                    aria-label="Abrir menú"
+                    aria-label="Abrir menú de navegación"
                 >
 
                     <span class="navbar-toggler-icon"></span>
@@ -84,74 +168,126 @@
                 </button>
 
 
+                <!-- MENÚ -->
+
                 <div
-                    class="collapse navbar-collapse justify-content-center"
-                    id="navbarNav"
+                    class="collapse navbar-collapse"
+                    id="menuPrincipal"
                 >
 
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ms-auto">
+
+
+                        <!-- INICIO -->
 
                         <li class="nav-item">
+
                             <a
                                 class="nav-link"
                                 href="../index.html"
                             >
+
                                 Inicio
+
                             </a>
+
                         </li>
 
+
+                        <!-- ASOCIATE -->
+
                         <li class="nav-item">
+
                             <a
                                 class="nav-link"
                                 href="./asociate.html"
                             >
+
                                 Asociate
+
                             </a>
+
                         </li>
 
+
+                        <!-- CONTACTO -->
+
                         <li class="nav-item">
+
                             <a
                                 class="nav-link active"
+                                aria-current="page"
                                 href="./contacto.html"
                             >
+
                                 Contacto
+
                             </a>
+
                         </li>
 
+
+                        <!-- ENTRADAS -->
+
                         <li class="nav-item">
+
                             <a
                                 class="nav-link"
                                 href="./entradas.html"
                             >
+
                                 Entradas
+
                             </a>
+
                         </li>
 
+
+                        <!-- FIXTURE -->
+
                         <li class="nav-item">
+
                             <a
                                 class="nav-link"
                                 href="./fixture.html"
                             >
+
                                 Fixture
+
                             </a>
+
                         </li>
 
+
+                        <!-- TRABAJÁ CON NOSOTROS -->
+
                         <li class="nav-item">
+
                             <a
                                 class="nav-link"
                                 href="./trabajaCN.html"
                             >
-                                Trabajá con Nosotros
+
+                                Trabajá con nosotros
+
                             </a>
+
                         </li>
 
+
+                        <!-- ABONOS -->
+
                         <li class="nav-item">
+
                             <a
                                 class="nav-link"
                                 href="./abonos.html"
                             >
+
                                 Abonos 2026
+
                             </a>
+
                         </li>
 
                     </ul>
@@ -165,60 +301,118 @@
     </header>
 
 
-    <!-- CONTENIDO -->
 
-    <main class="container my-5 page-contacto">
+    <!-- ==========================================
+         CONTENIDO PRINCIPAL
+    =========================================== -->
 
-        <section class="text-center animacion-aparecer">
+    <main class="page-contacto">
 
-            <h2>
-                Para más información contactate con nosotros
-            </h2>
 
-            <p>
-                Estamos disponibles para responder tus consultas,
-                brindarte información y ayudarte con todo lo relacionado
-                con San Lorenzo Primero.
-            </p>
+        <!-- ======================================
+             PRESENTACIÓN
+        ======================================= -->
+
+        <section
+            class="hero"
+            data-aos="fade-up"
+            aria-labelledby="titulo-contacto"
+        >
+
+            <div class="container text-center">
+
+                <h2 id="titulo-contacto">
+
+                    Para más información contactate con nosotros
+
+                </h2>
+
+
+                <p>
+
+                    Estamos disponibles para responder tus consultas,
+                    brindarte información y ayudarte con todo lo relacionado
+                    con San Lorenzo Primero.
+
+                </p>
+
+            </div>
 
         </section>
 
 
+
+        <!-- ======================================
+             CONTACTO
+        ======================================= -->
+
         <section
-            class="contenido-contacto row justify-content-center mt-5"
+            class="contenido-contacto"
+            aria-labelledby="titulo-contactate"
         >
 
-            <div
-                class="col-12 col-md-8 col-lg-6"
-            >
+            <div class="container">
 
-                <div class="card shadow text-center animacion-derecha">
+                <div class="row justify-content-center">
 
-                    <img
-                        src="../assets/img/contacto.jpg"
-                        class="card-img-top"
-                        alt="Contacto San Lorenzo Primero"
+
+                    <div
+                        class="col-12 col-md-8 col-lg-6"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
                     >
 
-                    <div class="card-body">
+                        <article class="card shadow text-center">
 
-                        <h3 class="card-title">
-                            Contactate con nosotros
-                        </h3>
 
-                        <p class="card-text">
-                            Si tenés alguna consulta, querés recibir
-                            información o necesitás comunicarte con
-                            nosotros, podés hacerlo a través de nuestros
-                            medios de contacto.
-                        </p>
+                            <!-- IMAGEN -->
 
-                        <a
-                            href="mailto:contacto@sanlorenzoprimero.com"
-                            class="btn btn-primary"
-                        >
-                            Enviar consulta
-                        </a>
+                            <img
+                                src="../assets/img/san-lorenzo-primero-contacto.jpg"
+                                class="card-img-top"
+                                alt="Contacto de San Lorenzo Primero"
+                                loading="lazy"
+                            >
+
+
+                            <!-- CONTENIDO -->
+
+                            <div class="card-body">
+
+
+                                <h3
+                                    id="titulo-contactate"
+                                    class="card-title"
+                                >
+
+                                    Contactate con nosotros
+
+                                </h3>
+
+
+                                <p class="card-text">
+
+                                    Si tenés alguna consulta, querés recibir
+                                    información o necesitás comunicarte con
+                                    nosotros, podés hacerlo a través de nuestros
+                                    medios de contacto.
+
+                                </p>
+
+
+                                <a
+                                    href="mailto:contacto@sanlorenzoprimero.com"
+                                    class="btn btn-primary"
+                                    aria-label="Enviar una consulta por correo electrónico"
+                                >
+
+                                    Enviar consulta
+
+                                </a>
+
+                            </div>
+
+                        </article>
 
                     </div>
 
@@ -231,28 +425,59 @@
     </main>
 
 
-    <!-- FOOTER -->
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
 
     <footer class="footer">
 
-        <p>
-            &copy; 2026 San Lorenzo Primero | Todos los derechos reservados.
-        </p>
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-12 text-center">
+
+                    <p>
+
+                        &copy; 2026 San Lorenzo Primero.
+                        Sitio dedicado al Club Atlético San Lorenzo.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </footer>
 
 
-    <!-- BOOTSTRAP JS -->
+
+    <!-- ==========================================
+         BOOTSTRAP JS
+    =========================================== -->
 
     <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-    </script>
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
 
-    <!-- AOS JS -->
+
+
+    <!-- ==========================================
+         AOS JS
+    =========================================== -->
 
     <script
-        src="https://unpkg.com/aos@2.3.1/dist/aos.js">
-    </script>
+        src="https://unpkg.com/aos@2.3.1/dist/aos.js"
+    ></script>
+
+
+
+    <!-- ==========================================
+         INICIALIZACIÓN AOS
+    =========================================== -->
 
     <script>
 
