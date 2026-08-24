@@ -1,145 +1,116 @@
-# San Lorenzo Primero
+# 🔵🔴 San Lorenzo Primero
 
-Proyecto desarrollado para la materia **Desarrollo Web**.
+Sitio web dedicado al **Club Atlético San Lorenzo de Almagro**, desarrollado como proyecto final para la materia **Desarrollo Web**.
 
-Sitio web dedicado a **San Lorenzo Primero**, con diferentes secciones informativas y un diseño responsive adaptado a dispositivos móviles, tablets y computadoras.
+El objetivo del proyecto es crear un sitio web informativo, moderno y responsive para los hinchas del Ciclón, utilizando HTML5, Bootstrap y una arquitectura de estilos desarrollada con SCSS.
 
-## Tecnologías utilizadas
+---
 
-* HTML5
-* SCSS / Sass
-* CSS3
-* Bootstrap 5.3
-* AOS (Animate On Scroll)
-* Git
-* GitHub
+## 📌 Descripción del proyecto
 
-## Funcionalidades
+**San Lorenzo Primero** es una página web que reúne información y recursos relacionados con el Club Atlético San Lorenzo.
 
-* Página principal.
-* Sección Asociate.
-* Contacto.
-* Entradas.
-* Fixture.
-* Trabajá con Nosotros.
-* Abonos 2026.
-* Diseño responsive para dispositivos móviles, tablets y computadoras.
-* Animaciones mediante AOS.
-* Navegación responsive mediante Bootstrap.
+El sitio permite acceder de manera sencilla a diferentes secciones:
 
-## Mejoras implementadas
+* 🏠 Inicio
+* 👤 Asociate
+* 📩 Contacto
+* 🎟️ Entradas
+* 📅 Fixture
+* 💼 Trabajá con nosotros
+* 🏟️ Abonos 2026
 
-* Diseño responsive utilizando Bootstrap.
-* Sistema de Grid de Bootstrap.
-* Navbar responsive.
-* Cards de Bootstrap.
-* Botones personalizados.
-* Animaciones y efectos visuales mediante AOS.
-* Organización del proyecto mediante carpetas.
-* Migración de CSS a SCSS.
-* Uso de variables reutilizables en SCSS.
-* Uso de mixins para reutilizar estilos.
-* Organización de estilos mediante partials.
-* Archivo `main.scss` como punto de entrada principal.
-* Compilación de SCSS a CSS.
-* Separación de estilos por componentes, páginas, layout y utilidades.
+La página principal cuenta con tarjetas de acceso rápido a las diferentes secciones, imágenes relacionadas con cada contenido y animaciones para mejorar la experiencia de navegación.
 
-## Arquitectura SCSS
+---
 
-El proyecto utiliza una arquitectura modular de SCSS para mantener los estilos organizados y reutilizables.
+## 🎯 Objetivos
 
-```text
-scss/
-├── utilities/
-│   ├── _variables.scss
-│   └── _mixins.scss
-│
-├── base/
-│   ├── _base.scss
-│   └── _tipografia.scss
-│
-├── layout/
-│   ├── _header.scss
-│   ├── _nav.scss
-│   └── _footer.scss
-│
-├── components/
-│   ├── _buttons.scss
-│   └── _cards.scss
-│
-├── pages/
-│   ├── _asociate.scss
-│   ├── _contacto.scss
-│   ├── _entradas.scss
-│   ├── _fixture.scss
-│   ├── _trabaja.scss
-│   └── _abonos.scss
-│
-└── main.scss
-```
+Los principales objetivos del proyecto son:
 
-El archivo `main.scss` funciona como **punto de entrada** y utiliza `@use` para importar los diferentes módulos SCSS.
+* Crear una página web responsive y adaptable a diferentes dispositivos.
+* Aplicar correctamente **HTML5 semántico**.
+* Utilizar **Bootstrap 5.3.3** para facilitar el diseño responsive.
+* Implementar una arquitectura organizada mediante **SCSS**.
+* Utilizar variables, mixins y partials para evitar la repetición de código.
+* Incorporar animaciones mediante **AOS (Animate On Scroll)**.
+* Aplicar buenas prácticas de accesibilidad y SEO.
+* Organizar correctamente los archivos y recursos del proyecto.
+* Implementar navegación entre las diferentes páginas del sitio.
 
-## Compilación de SCSS
+---
 
-El proyecto utiliza Sass para convertir los archivos SCSS en CSS.
+## 🛠️ Tecnologías utilizadas
 
-Para compilar manualmente:
+### HTML5
 
-```bash
-sass scss/main.scss css/styles.css
-```
+Utilizado para desarrollar la estructura y el contenido de las diferentes páginas del sitio.
 
-Para trabajar con compilación automática:
+Se utilizaron elementos semánticos como:
 
-```bash
-sass --watch scss/main.scss css/styles.css
-```
+* `<header>`
+* `<nav>`
+* `<main>`
+* `<section>`
+* `<article>`
+* `<footer>`
 
-De esta manera, cada modificación realizada en los archivos `.scss` actualiza automáticamente:
+### SCSS / SASS
+
+Utilizado para organizar y administrar los estilos del proyecto.
+
+La arquitectura SCSS está dividida en diferentes categorías para facilitar el mantenimiento y reutilización del código.
+
+### Bootstrap 5.3.3
+
+Utilizado principalmente para:
+
+* Sistema de grillas.
+* Diseño responsive.
+* Componentes.
+* Botones.
+* Navbar.
+* Utilidades de alineación y espaciado.
+
+### AOS
+
+Se utilizó **Animate On Scroll** para agregar animaciones al contenido a medida que el usuario recorre la página.
+
+### Git y GitHub
+
+Utilizados para:
+
+* Control de versiones.
+* Seguimiento de cambios.
+* Organización del desarrollo.
+* Publicación del proyecto.
+
+---
+
+## 📁 Estructura del proyecto
 
 ```text
-css/styles.css
-```
-
-El archivo CSS generado es utilizado posteriormente por los archivos HTML.
-
-## Estructura del proyecto
-
-```text
-/
+SAN-LORENZO-PRIMERO/
+│
 ├── assets/
 │   └── img/
+│       ├── san-lorenzo-primero-logo.png
+│       ├── san-lorenzo-primero-asociate.jpg
+│       ├── san-lorenzo-primero-contacto.jpg
+│       ├── san-lorenzo-primero-entradas.jpg
+│       ├── san-lorenzo-primero-fixture.jpg
+│       ├── san-lorenzo-primero-abonos-2026.jpg
+│       └── san-lorenzo-primero-hinchada.jpg
 │
 ├── css/
 │   └── styles.css
 │
 ├── scss/
-│   ├── utilities/
-│   │   ├── _variables.scss
-│   │   └── _mixins.scss
-│   │
 │   ├── base/
-│   │   ├── _base.scss
-│   │   └── _tipografia.scss
-│   │
-│   ├── layout/
-│   │   ├── _header.scss
-│   │   ├── _nav.scss
-│   │   └── _footer.scss
-│   │
 │   ├── components/
-│   │   ├── _buttons.scss
-│   │   └── _cards.scss
-│   │
+│   ├── layout/
 │   ├── pages/
-│   │   ├── _asociate.scss
-│   │   ├── _contacto.scss
-│   │   ├── _entradas.scss
-│   │   ├── _fixture.scss
-│   │   ├── _trabaja.scss
-│   │   └── _abonos.scss
-│   │
+│   ├── utilities/
 │   └── main.scss
 │
 ├── pages/
@@ -151,16 +122,144 @@ El archivo CSS generado es utilizado posteriormente por los archivos HTML.
 │   └── abonos.html
 │
 ├── index.html
-├── .gitignore
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
-## Git y control de versiones
+---
 
-El proyecto utiliza **Git** para el control de versiones y **GitHub** para almacenar el repositorio.
+## 🎨 Diseño
 
-Los cambios se organizan mediante commits descriptivos para mantener un historial claro del desarrollo del proyecto.
+El diseño está inspirado en la identidad visual del Club Atlético San Lorenzo de Almagro.
 
-## Autor
+Se utilizaron principalmente tonos:
 
-**Julian Agustín Gomez**
+* 🔴 Rojo
+* 🔵 Azul
+* ⚪ Blanco
+
+La interfaz busca mantener una estética deportiva, clara y sencilla, permitiendo encontrar rápidamente la información buscada.
+
+---
+
+## 📱 Diseño responsive
+
+El sitio fue desarrollado teniendo en cuenta diferentes tamaños de pantalla:
+
+* 💻 Computadoras
+* 💻 Notebooks
+* 📱 Tablets
+* 📱 Celulares
+
+Se utilizaron las herramientas responsive de Bootstrap junto con media queries en SCSS.
+
+---
+
+## 🔍 SEO y accesibilidad
+
+El proyecto incorpora diferentes buenas prácticas de SEO y accesibilidad.
+
+Entre ellas:
+
+* `meta description`
+* `meta keywords`
+* `meta author`
+* `meta robots`
+* Títulos `<title>` descriptivos.
+* Atributos `alt` en las imágenes.
+* Estructura semántica HTML5.
+* Jerarquía correcta de títulos.
+* Etiquetas `aria-label` y `aria-labelledby`.
+* Diseño adaptable a dispositivos móviles.
+
+---
+
+## ✨ Funcionalidades
+
+### Navegación
+
+La barra de navegación permite acceder a todas las secciones principales del sitio.
+
+### Cards
+
+La página de inicio presenta tarjetas informativas con:
+
+* Imagen.
+* Título.
+* Descripción.
+* Botón de acceso.
+
+### Animaciones
+
+Se incorporaron animaciones mediante AOS para generar una experiencia de navegación más dinámica.
+
+### Formularios y contacto
+
+El sitio cuenta con secciones destinadas a la comunicación y consulta de los usuarios.
+
+### Abonos
+
+Se incorporó una sección específica para presentar información relacionada con los **Abonos 2026**.
+
+---
+
+## ⚙️ Compilación de SCSS
+
+Los estilos se desarrollan mediante SCSS y posteriormente se compilan a CSS.
+
+Para compilar el archivo principal:
+
+```bash
+sass scss/main.scss css/styles.css
+```
+
+De esta manera, el navegador utiliza el archivo:
+
+```text
+css/styles.css
+```
+
+mientras que el desarrollo de los estilos se mantiene organizado dentro de la carpeta `scss`.
+
+---
+
+## 🚀 Cómo ejecutar el proyecto
+
+1. Clonar o descargar el repositorio.
+2. Abrir la carpeta del proyecto en Visual Studio Code.
+3. Verificar que las carpetas `assets`, `css`, `scss` y `pages` estén correctamente ubicadas.
+4. Abrir `index.html` en el navegador.
+
+También se puede utilizar una extensión como **Live Server** para visualizar el proyecto durante el desarrollo.
+
+---
+
+## 📚 Proyecto académico
+
+**Materia:** Desarrollo Web
+
+**Proyecto:** San Lorenzo Primero
+
+**Año:** 2026
+
+**Tipo:** Proyecto final / Entrega final
+
+---
+
+## 👨‍💻 Autor
+
+**San Lorenzo Primero**
+
+Proyecto desarrollado con fines académicos para la materia **Desarrollo Web**.
+
+---
+
+## 🔗 Repositorio
+
+El proyecto se encuentra alojado en GitHub y cuenta con control de versiones mediante Git.
+
+---
+
+## ⚽ ¡Vamos Ciclón!
+
+**San Lorenzo Primero — Todo por el Ciclón.**
