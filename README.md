@@ -265,6 +265,15 @@ El proyecto se encuentra alojado en GitHub y cuenta con control de versiones med
 **San Lorenzo Primero — Todo por el Ciclón.**
 
 
-## ¡link del sitio! 
+## 🌐 ¡Sitio web online!
 
-https://juliangomez22.github.io/SanLorenzoPrimero/
+Podés visitar el sitio publicado en el siguiente enlace:
+
+🔗 **[Ver sitio online] https://juliangomez22.github.io/SanLorenzoPrimero/**
+
+
+## 💻 Repositorio
+
+🔗 **Repositorio de GitHub: https://github.com/juliangomez22/SanLorenzoPrimero**
+
+El repositorio se encuentra configurado como público y contiene todo el código fuente del proyecto.
